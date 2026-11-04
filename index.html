@@ -5,10 +5,14 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#7831b5">
 <meta name="description" content="Serenamente · Clínica de Salud Mental. Un espacio seguro y de apoyo para tu bienestar.">
-<title>Serenamente | Edificio digital · PMV 1.0</title>
+<meta name="description" content="Serenamente PMV · El Trasteo · Sprint 5 · index9">
+<title>Serenamente | Edificio digital · index42</title>
 <style>
 :root{--ink:#291344;--purple:#7622bd;--purple2:#ba37e7;--muted:#695b79;--stroke:rgba(112,58,170,.19);--glass:rgba(255,255,255,.78);--shadow:0 14px 38px rgba(79,28,129,.12);--r:26px}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f7f0ff url('assets/fondoh.png') center top/cover fixed no-repeat}button,a{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #f69c12;outline-offset:3px}img{max-width:100%;display:block}.shell{max-width:1590px;margin:auto;padding:16px clamp(14px,2.3vw,34px) 35px}.topbar{display:flex;align-items:center;gap:18px;justify-content:space-between;min-height:86px;padding:5px 8px 14px;border-bottom:1px solid rgba(137,65,182,.11)}.brand{border:0;background:none;padding:0;flex:0 0 clamp(210px,24vw,330px)}.brand img{width:100%;height:auto;max-height:95px;object-fit:contain;object-position:left}.nav{display:flex;flex-wrap:wrap;gap:6px;align-items:center;justify-content:center}.nav-btn,.team-btn{border:1px solid transparent;background:transparent;color:#321352;padding:11px 15px;border-radius:999px;font-weight:800;white-space:nowrap;transition:.2s}.nav-btn:hover,.team-btn:hover{background:#fff7ff;transform:translateY(-1px)}.nav-btn.active{background:linear-gradient(110deg,#c43de6,#6420ad);color:#fff;box-shadow:0 6px 14px #6d26ad42}.team-btn{border:2px solid #8428c7;background:#ffffffa6}.menu-toggle{display:none;border:1px solid var(--stroke);background:white;border-radius:12px;padding:10px 14px;font-weight:800;color:var(--ink)}.glass{background:var(--glass);border:1px solid rgba(255,255,255,.94);box-shadow:var(--shadow);backdrop-filter:blur(10px);border-radius:var(--r)}.page{display:none;animation:appear .24s ease}.page.active{display:block}@keyframes appear{from{opacity:.2;transform:translateY(7px)}to{opacity:1;transform:none}}.dashboard{display:grid;grid-template-columns:minmax(0,2.05fr) minmax(310px,.94fr);gap:17px;align-items:stretch;margin-top:13px}.left-col{min-width:0}.hero{display:grid;grid-template-columns:37% 63%;min-height:330px;align-items:center;position:relative;overflow:hidden}.hero-figure{height:100%;display:flex;align-items:end;overflow:hidden}.hero-figure img{width:100%;height:100%;object-fit:cover;object-position:center}.hero-copy{padding:22px 25px 22px 12px}.hero h1{font-size:clamp(31px,3.4vw,57px);line-height:1.02;margin:0 0 6px;letter-spacing:-1.5px}.hero h1 em{display:block;color:#7525b4;font-style:italic}.hero .subtitle{color:#9060b2;font-size:clamp(17px,1.6vw,25px);margin:0 0 12px}.hero p{font-size:clamp(14px,1.12vw,18px);line-height:1.5;max-width:610px}.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.cta{background:linear-gradient(120deg,#c43de6,#6e1aab);color:white;border:0;padding:13px 20px;border-radius:99px;font-weight:800;box-shadow:0 7px 16px #7e2eb03a}.cta.secondary{background:#fff;color:#63209d;border:2px solid #bd79ea}.cta:hover{filter:brightness(1.06);transform:translateY(-1px)}.section-title{font-size:clamp(20px,1.9vw,29px);margin:0 0 14px}.services{padding:20px 17px;margin-top:12px}.service-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:9px}.asset-button{border:0;padding:0;background:none;border-radius:21px;overflow:hidden;box-shadow:0 3px 10px #4e1b821a;transition:.2s}.asset-button:hover{transform:translateY(-4px);box-shadow:0 9px 18px #62239730}.asset-button img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain}.building{padding:18px 15px;height:100%}.building-head{text-align:center;margin:2px 0 15px}.building-head h2{font-size:clamp(22px,2vw,29px);margin:0}.building-head p{margin:4px 0;color:var(--muted)}.floor-stack{display:grid;gap:11px}.floor-img{width:100%;border:0;background:none;padding:0;border-radius:20px;transition:.2s;overflow:hidden}.floor-img img{width:100%;height:auto}.floor-img:hover{transform:translateX(4px);filter:drop-shadow(0 5px 6px #8b38b13b)}.lower{display:grid;grid-template-columns:1fr 1.4fr .95fr;gap:14px;margin-top:14px}.info-card{padding:18px 21px;min-height:190px}.info-card h2{font-size:clamp(20px,1.7vw,26px);margin:0 0 10px}.benefits{margin:0;padding-left:20px;line-height:1.8;font-size:15px}.benefits li::marker{color:#18a867}.team-image{padding:0;overflow:hidden;border:0;width:100%;height:100%;min-height:180px;background:white;display:flex;align-items:center}.team-image img{width:100%;height:100%;object-fit:contain}.message-card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.message-card .heart{font-size:52px;color:#df40b7}.message-card h2{margin:5px 0}.message-card p{margin:5px 0;color:var(--muted)}
+/* Only the selected floor may be visible; override the flex display of floor-screen. */
+.floor-screen:not(.active){display:none!important}
+.floor-screen.active{display:flex}
 /* Uniform floor screen: same panel dimensions for every floor */
 .floor-screen{margin-top:16px;min-height:660px;padding:clamp(18px,2.5vw,34px);display:flex;flex-direction:column}.floor-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:17px}.back-btn{border:1px solid #d9c2e9;border-radius:99px;background:#fff;color:#66239a;padding:10px 17px;font-weight:800}.floor-tag{font-weight:800;font-size:12px;padding:8px 12px;border-radius:99px;background:#f2e8fa;color:#65218c}.floor-heading{display:grid;grid-template-columns:minmax(0,480px) 1fr;align-items:center;gap:24px;margin-bottom:23px}.floor-heading img{width:100%;border-radius:18px}.floor-heading h1{font-size:clamp(26px,3vw,42px);margin:0 0 8px}.floor-heading p{color:var(--muted);line-height:1.5;margin:0;max-width:580px}.rooms{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;align-content:start}.room{border:1px solid #e8d5f4;background:linear-gradient(140deg,#fff,#f8efff);border-radius:20px;padding:20px;text-align:left;min-height:112px;display:flex;gap:14px;align-items:center;color:var(--ink);transition:.2s}.room:hover{transform:translateY(-3px);border-color:#b675dd;box-shadow:0 9px 18px #7628a31c}.room-icon{display:grid;place-items:center;flex:0 0 45px;width:45px;height:45px;border-radius:15px;background:#f0dffc;color:#7725b4;font-size:24px}.room-name{font-weight:850;font-size:17px}.room-note{font-size:12px;color:var(--muted);margin-top:5px}.floor-bottom{margin-top:auto;padding-top:28px;display:flex;align-items:center;justify-content:space-between;gap:15px;color:var(--muted);font-size:13px}.floor-switch{display:flex;flex-wrap:wrap;gap:7px}.floor-switch button{border:1px solid #dec3ed;background:#fff;border-radius:12px;padding:8px 12px;color:#6720a0;font-weight:800}.floor-switch button.current{background:#7c2abb;color:#fff}
 .modal-overlay{position:fixed;inset:0;z-index:50;background:#1b092a9c;display:none;align-items:center;justify-content:center;padding:18px}.modal-overlay.open{display:flex}.modal{position:relative;width:min(100%,500px);background:#fff url('assets/fondoh.png') center/cover;border:1px solid white;border-radius:28px;box-shadow:0 25px 70px #1c083a6e;text-align:center;padding:38px 30px}.modal-close{position:absolute;right:15px;top:12px;border:0;background:#f1e5f8;border-radius:50%;width:38px;height:38px;color:#5d1a95;font-size:24px}.modal-icon{font-size:50px}.modal h2{font-size:29px;margin:12px 0}.modal p{color:#5f5370;line-height:1.6}.modal .location{font-size:13px;font-weight:800;color:#8b4ab1}.footer{font-size:12px;color:#6e5b7e;text-align:center;margin-top:24px}.hidden{display:none!important}
@@ -16,6 +20,27 @@
 @media(max-width:780px){body{background-image:url('assets/fondov.png');background-attachment:scroll;background-size:100% 100%}.shell{padding:8px 12px 20px}.topbar{min-height:65px;flex-wrap:wrap;gap:5px}.brand{flex-basis:185px}.brand img{max-height:65px}.menu-toggle{display:block}.nav{display:none;order:3;flex:1 0 100%;justify-content:stretch;padding:8px 0}.nav.open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.nav-btn{font-size:13px;padding:12px 5px}.team-btn{padding:8px 12px;font-size:12px}.dashboard{grid-template-columns:1fr}.hero{min-height:250px;grid-template-columns:40% 60%}.hero-copy{padding:16px 10px}.hero h1{font-size:clamp(27px,6vw,40px)}.hero p{font-size:13px}.hero .subtitle{font-size:16px}.hero-actions{gap:6px}.cta{padding:11px 13px;font-size:12px}.building{padding:16px}.floor-stack{grid-template-columns:repeat(2,minmax(0,1fr))}.lower{grid-template-columns:1fr 1fr}.message-card{grid-column:1/-1}.floor-heading{grid-template-columns:1fr;gap:12px}.floor-heading img{max-width:520px}.floor-screen{min-height:660px}.floor-bottom{flex-direction:column;align-items:flex-start}}
 @media(max-width:500px){.topbar{gap:7px}.brand{flex-basis:145px}.hero{display:flex;flex-direction:column}.hero-figure{width:100%;height:235px}.hero-figure img{object-position:center 30%}.hero-copy{padding:17px 19px 24px;text-align:center}.hero h1{font-size:34px}.hero-actions{justify-content:center}.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.floor-stack{grid-template-columns:1fr}.lower{grid-template-columns:1fr}.message-card{grid-column:auto}.team-image{min-height:0}.rooms{grid-template-columns:1fr}.room{min-height:95px}.floor-screen{min-height:660px}.floor-heading h1{font-size:29px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* PMV 1.0 funcional: extensiones aditivas; el diseño original se conserva */
+.demo-bar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:12px 0 0;padding:10px 15px;background:#ffffffd9;border:1px solid #e4cbed;border-radius:18px;box-shadow:var(--shadow)}
+.demo-bar label{font-size:13px;font-weight:800;color:#532178}.demo-bar select,.workspace select,.workspace input,.workspace textarea{border:1px solid #d8bce8;border-radius:12px;padding:10px 12px;background:#fff;color:var(--ink);font:inherit;min-width:0}.demo-bar .demo-hint{font-size:12px;color:var(--muted)}
+.workspace{margin-top:16px;padding:clamp(16px,2.6vw,34px);min-height:620px}.work-head{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:18px}.work-head h1{margin:3px 0 0;font-size:clamp(25px,2.6vw,38px)}.work-actions{display:flex;flex-wrap:wrap;gap:8px}.small-btn{background:#fff;border:1px solid #d6b9e8;color:#642095;border-radius:12px;padding:9px 12px;font-weight:800}.small-btn:hover{background:#f5e8fc}.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.work-card{background:#ffffffdb;border:1px solid #ead6f5;border-radius:19px;padding:17px;min-width:0}.work-card h3{margin:0 0 9px;font-size:18px}.work-card p{line-height:1.5;color:var(--muted)}.work-card.wide{grid-column:span 2}.work-card.full{grid-column:1/-1}.work-card .stat{font-size:30px;font-weight:900;color:#7724b8}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:800}.field input,.field select,.field textarea{width:100%;font-weight:400}.field textarea{min-height:95px;resize:vertical}.field.span2{grid-column:span 2}.data-table{width:100%;border-collapse:collapse;font-size:13px}.data-table th,.data-table td{text-align:left;border-bottom:1px solid #eadcf2;padding:10px 8px;vertical-align:top}.data-table th{color:#60228c}.table-wrap{overflow-x:auto}.pill{display:inline-block;border-radius:99px;background:#f1e1fc;color:#6920a2;font-size:11px;padding:5px 9px;font-weight:800}.inline-controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.notice{padding:12px 14px;background:#fff5e4;border:1px solid #f4d7a0;border-radius:13px;color:#6d4614;font-size:13px}.muted{color:var(--muted)}.stepper{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.stepper button{padding:9px 12px;border-radius:12px;border:1px solid #d9c0ea;background:white;color:#61228b;font-weight:800}.stepper button.current{background:#7622bd;color:white}.guide-box{background:#f8efff;border:1px solid #e7cff4;border-radius:17px;padding:17px}.room-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.room-list .work-card{display:flex;flex-direction:column;gap:8px}.room-list .work-card img{width:100%;max-width:210px;align-self:center;border-radius:15px}.toast{position:fixed;bottom:20px;right:20px;z-index:100;padding:13px 18px;background:#4b176e;color:white;border-radius:15px;box-shadow:var(--shadow);max-width:350px}.action-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.mini-note{font-size:12px;color:var(--muted)}
+@media(max-width:900px){.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.work-card.wide{grid-column:span 2}}
+@media(max-width:600px){.work-grid,.form-grid,.room-list{grid-template-columns:1fr}.work-card.wide,.field.span2{grid-column:span 1}.demo-bar{align-items:stretch}.demo-bar select{width:100%}.work-head{align-items:flex-start}.data-table{min-width:570px}}
+
+
+/* Sprint 38 · Navegación exclusiva por pantalla: Inicio, piso o habitación. */
+.page.active{animation:trasteoReveal .24s ease-out both}
+@keyframes trasteoReveal{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.page.active{animation:none}}
+
+/* Piso 2: service artwork from the original /assets/ collection. */
+#piso2 .rooms{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+#piso2 .room{display:flex;flex-direction:column;align-items:stretch;text-align:center;gap:10px;overflow:hidden;padding:12px;min-height:0}
+#piso2 .room-image{width:100%;height:155px;object-fit:contain;display:block;border-radius:14px}
+#piso2 .room-name{display:block}
+@media(max-width:780px){#piso2 .rooms{grid-template-columns:repeat(2,minmax(0,1fr))}#piso2 .room-image{height:120px}}
+@media(max-width:420px){#piso2 .rooms{grid-template-columns:1fr 1fr;gap:9px}#piso2 .room-image{height:100px}}
 </style>
 </head>
 <body>
@@ -32,7 +57,7 @@
  </nav>
  <button class="team-btn" data-go="piso3" type="button">♙ Área del equipo</button>
 </header>
-<main id="main">
+<div class="demo-bar" aria-label="Controles de demostración"><div class="inline-controls"><label for="demoRole">Perfil simulado</label><select id="demoRole"><option value="psicologa">Luz Carime · Psicóloga / administradora</option><option value="medico">Médico</option><option value="administrativo">Administrativo</option><option value="paciente">Paciente ficticio</option></select></div><div class="inline-controls"><button class="small-btn" data-action="guide">▶ Recorrido guiado</button><button class="small-btn" data-action="lab">⚗ Laboratorio</button><span class="demo-hint">PMV 1.0 integrado · Solo datos ficticios</span></div></div><main id="main">
 <section class="page active" id="inicio" aria-label="Inicio Serenamente">
  <div class="dashboard">
   <div class="left-col">
@@ -63,8 +88,9 @@
  </div>
 </section>
 <div id="floorPages"></div>
+<section class="page workspace glass" id="workspace" aria-label="Habitación funcional"><div id="workspaceBody"></div></section>
 </main>
-<footer class="footer">Serenamente · Prototipo demostrativo 1.0 · Sin datos clínicos reales · Las áreas restringidas no cuentan aún con autenticación.</footer>
+<footer class="footer">Serenamente · PMV 1.0 · Edificio digital original + funciones integradas · Sin datos clínicos reales · Las áreas restringidas no cuentan aún con autenticación.</footer>
 </div>
 <div class="modal-overlay" id="modalOverlay" role="presentation" aria-hidden="true"><section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription"><button class="modal-close" id="closeModal" aria-label="Cerrar ventana">×</button><div class="modal-icon" aria-hidden="true">🚧</div><div class="location" id="modalLocation"></div><h2 id="modalTitle">En construcción</h2><p id="modalDescription">Esta habitación estará disponible en una próxima versión del edificio digital Serenamente.</p><button class="cta" id="acceptModal">Entendido</button></section></div>
 <script>
@@ -72,20 +98,1190 @@
 const floors=[
  {id:'piso1',name:'Identidad Institucional',image:'piso1.png',access:'Público',description:'Conoce nuestra identidad, misión, equipo y canales de comunicación.',rooms:[['Inicio','⌂'],['Nosotros','✦'],['Misión','◎'],['Equipo profesional','♧'],['Contacto','✉']]},
  {id:'piso2',name:'Servicios Especializados',image:'piso2.png',access:'Público',description:'Explora nuestras modalidades de atención y acompañamiento.',rooms:[['Psicología clínica','✿'],['Terapia individual','♡'],['Terapia de pareja','♥'],['Terapia familiar','♧'],['Terapias especializadas','✧'],['Grupos de apoyo','♙']]},
- {id:'piso3',name:'Gestión Clínica',image:'piso3.png',access:'Restringido · demostración',description:'Espacio previsto para procesos clínicos y administrativos. La seguridad y autenticación se implementarán en una fase posterior.',rooms:[['Pacientes','♙'],['Expedientes','▤'],['Agenda','▦'],['Seguimiento','◷']]},
- {id:'piso4',name:'Inteligencia y Gestión',image:'piso4.png',access:'Restringido · demostración',description:'Espacio previsto para herramientas inteligentes, indicadores y trazabilidad. Sin conexión a servicios externos en esta versión.',rooms:[['Asistente IA','✧'],['Reportes','▥'],['Bitácora','☷'],['Indicadores','◫']]}
+ {id:'piso3',name:'Gestión Clínica',image:'piso3.png',access:'Restringido · demostración',description:'Espacio previsto para procesos clínicos y administrativos. La seguridad y autenticación se implementarán en una fase posterior.',rooms:[['Pacientes','♙'],['Expedientes','▤'],['Agenda','▦'],['Seguimiento','◷'],['Evaluaciones','✧'],['Reportes clínicos','▤'],['Remisiones','⇄']]},
+ {id:'piso4',name:'Inteligencia y Gestión',image:'piso4.png',access:'Restringido · demostración',description:'Espacio previsto para herramientas inteligentes, indicadores y trazabilidad. Sin conexión a servicios externos en esta versión.',rooms:[['Asistente IA','✧'],['Reportes','▥'],['Bitácora','☷'],['Indicadores','◫'],['Pagos','＄'],['Tareas','☑'],['Convenios Institucionales','▦']]}
 ];
+const roomImagesPiso2={'Psicología clínica':'clinica.png','Terapia individual':'individual.png','Terapia de pareja':'pareja.png','Terapia familiar':'familiar.png','Terapias especializadas':'especializadas.png','Grupos de apoyo':'grupos.png'};
 const escapeHTML=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pages=document.getElementById('floorPages');
-pages.innerHTML=floors.map((f,i)=>`<section class="page floor-screen glass" id="${f.id}" aria-label="Piso ${i+1}: ${escapeHTML(f.name)}"><div class="floor-toolbar"><button class="back-btn" data-go="inicio">← Volver al inicio</button><span class="floor-tag">${escapeHTML(f.access)}</span></div><div class="floor-heading"><img src="assets/${f.image}" alt="Piso ${i+1} · ${escapeHTML(f.name)}"><div><h1>Habitaciones del Piso ${i+1}</h1><p>${escapeHTML(f.description)}</p></div></div><div class="rooms">${f.rooms.map(([name,icon])=>`<button class="room" data-room="${escapeHTML(name)}" data-floor="Piso ${i+1}"><span class="room-icon" aria-hidden="true">${icon}</span><span><span class="room-name">${escapeHTML(name)}</span><span class="room-note" style="display:block">Abrir habitación →</span></span></button>`).join('')}</div><div class="floor-bottom"><span>Serenamente · Piso ${i+1} de 4</span><div class="floor-switch">${floors.map((g,j)=>`<button data-go="${g.id}" class="${f.id===g.id?'current':''}" aria-label="Ir al piso ${j+1}">${j+1}</button>`).join('')}</div></div></section>`).join('');
+pages.innerHTML=floors.map((f,i)=>`<section class="page floor-screen glass" id="${f.id}" aria-label="Piso ${i+1}: ${escapeHTML(f.name)}"><div class="floor-toolbar"><button class="back-btn" data-go="inicio">← Volver al inicio</button><span class="floor-tag">${escapeHTML(f.access)}</span></div><div class="floor-heading"><img src="assets/${f.image}" alt="Piso ${i+1} · ${escapeHTML(f.name)}"><div><h1>Habitaciones del Piso ${i+1}</h1><p>${escapeHTML(f.description)}</p></div></div><div class="rooms">${f.rooms.map(([name,icon])=>`<button class="room" data-room="${escapeHTML(name)}" data-floor="Piso ${i+1}">${i===1&&roomImagesPiso2[name]?`<img class="room-image" src="assets/${roomImagesPiso2[name]}" alt="" loading="lazy">`:`<span class="room-icon" aria-hidden="true">${icon}</span>`}<span><span class="room-name">${escapeHTML(name)}</span><span class="room-note" style="display:block">Abrir habitación →</span></span></button>`).join('')}</div><div class="floor-bottom"><span>Serenamente · Piso ${i+1} de 4</span><div class="floor-switch">${floors.map((g,j)=>`<button data-go="${g.id}" class="${f.id===g.id?'current':''}" aria-label="Ir al piso ${j+1}">${j+1}</button>`).join('')}</div></div></section>`).join('');
 const overlay=document.getElementById('modalOverlay');let lastFocus=null;
+const STORAGE='serenamente_pmv_index5_s1_v1'; // Sprint 4: reutiliza el almacenamiento de index5 a index7
+const today=()=>new Date().toLocaleDateString('en-CA');
+const seed=()=>({sessions:[],patients:[{id:'PAC-001',name:'Mariana Torres',age:29,phone:'300 000 0001',email:'mariana@example.test',status:'Activo',reason:'Manejo del estrés',assigned:'Luz Carime',created:today()},{id:'PAC-002',name:'Andrés Ríos',age:37,phone:'300 000 0002',email:'andres@example.test',status:'Activo',reason:'Acompañamiento emocional',assigned:'Luz Carime',created:today()},{id:'PAC-003',name:'Valentina Mora',age:16,phone:'300 000 0003',email:'valentina@example.test',status:'Seguimiento',reason:'Orientación y bienestar',assigned:'Luz Carime',created:today()},{id:'PAC-004',name:'Julián Peña',age:44,phone:'300 000 0004',email:'julian@example.test',status:'Activo',reason:'Valoración interdisciplinaria',assigned:'Médico',created:today()}],appointments:[{id:'C-001',patientId:'PAC-001',date:'2026-11-06',time:'09:00',service:'Terapia individual',status:'Confirmada'},{id:'C-002',patientId:'PAC-002',date:'2026-11-07',time:'11:00',service:'Psicología clínica',status:'Pendiente'}],notes:[{id:'H-001',patientId:'PAC-001',date:'2026-11-02',type:'Evolución',body:'Registro ficticio de sesión: se revisaron objetivos de acompañamiento.'}],assessments:[{id:'E-001',patientId:'PAC-001',name:'Cuestionario de bienestar (simulado)',date:'2026-11-02',result:'Resultado ilustrativo; no equivale a interpretación clínica.'}],reports:[{id:'I-001',patientId:'PAC-001',title:'Informe de seguimiento (simulado)',status:'Borrador',body:'Documento de ejemplo, sujeto a validación profesional.'}],payments:[{id:'F-001',patientId:'PAC-001',concept:'Sesión individual',amount:120000,paid:120000},{id:'F-002',patientId:'PAC-002',concept:'Sesión clínica',amount:120000,paid:60000}],followups:[{id:'S-001',patientId:'PAC-002',date:'2026-11-18',task:'Seguimiento programado',status:'Pendiente'}],tasks:[{id:'T-001',patientId:'PAC-001',date:'2026-11-12',task:'Revisar plan de seguimiento (simulado)',status:'Pendiente',assigned:'Luz Carime'}],referrals:[{id:'R-001',patientId:'PAC-002',date:'2026-11-03',to:'Médico',reason:'Interconsulta ficticia',status:'Solicitada'}],agreements:[{id:'V-001',organization:'Organización Ejemplo',service:'Bienestar organizacional',quota:20,status:'Borrador'}],log:[]});
+function load(){try{const v=JSON.parse(localStorage.getItem(STORAGE));if(v&&Array.isArray(v.patients)&&Array.isArray(v.appointments))return v}catch(e){}return seed()}
+let db=load();for(const k of ['tasks','referrals','agreements','sessions','assessments','reports','payments','followups'])if(!Array.isArray(db[k]))db[k]=[];let role='psicologa',currentRoom='',currentFloor='',guideStep=0,guidePatientId='';
+const guide=[['Pacientes','Piso 3','Selecciona un paciente ficticio o crea uno nuevo.'],['Agenda','Piso 3','Programa una cita para ese paciente.'],['Expedientes','Piso 3','Registra una evolución de atención ficticia.'],['Evaluaciones','Piso 3','Agrega una evaluación demostrativa sin usar pruebas clínicas reales.'],['Reportes clínicos','Piso 3','Elabora un borrador de informe ficticio.'],['Pagos','Piso 4','Registra un pago simulado y consulta el saldo.'],['Seguimiento','Piso 3','Programa el siguiente contacto.']];
+const permitted={psicologa:['*'],medico:['Pacientes','Expedientes','Agenda','Seguimiento','Evaluaciones','Reportes clínicos','Remisiones','Convenios Institucionales','Tareas'],administrativo:['Pacientes','Agenda','Pagos','Convenios Institucionales','Bitácora','Indicadores','Tareas','Contacto','Inicio','Nosotros','Misión','Equipo profesional'],paciente:['Inicio','Nosotros','Misión','Equipo profesional','Contacto','Psicología clínica','Terapia individual','Terapia de pareja','Terapia familiar','Terapias especializadas','Grupos de apoyo','Agenda']};
+const can=(name)=>permitted[role].includes('*')||permitted[role].includes(name);
+const esc=escapeHTML;
+const safe=(v)=>esc(v??'');
+const findPatient=id=>db.patients.find(p=>p.id===id);
+const patientName=id=>findPatient(id)?.name||'Paciente no disponible';
+const options=(selected)=>db.patients.map(p=>`<option value="${safe(p.id)}" ${p.id===selected?'selected':''}>${safe(p.name)} · ${safe(p.id)}</option>`).join('');
+const money=v=>Number(v||0).toLocaleString('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
+function persist(message){try{localStorage.setItem(STORAGE,JSON.stringify(db))}catch(e){toast('No fue posible guardar localmente; verifica el almacenamiento del navegador.')}if(message)toast(message)}
+function audit(action){if(!Array.isArray(db.log))db.log=[];db.log.unshift({at:new Date().toLocaleString('es-CO'),role,action});db.log=db.log.slice(0,100)}
+function toast(message){document.querySelector('.toast')?.remove();const t=document.createElement('div');t.className='toast';t.role='status';t.textContent=message;document.body.appendChild(t);setTimeout(()=>t.remove(),3800)}
 function showPage(id){if(!document.getElementById(id))return;document.querySelectorAll('.page').forEach(p=>p.classList.toggle('active',p.id===id));document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.go===id));document.getElementById('nav').classList.remove('open');document.getElementById('menuToggle').setAttribute('aria-expanded','false');window.scrollTo({top:0,behavior:'instant'});try{history.replaceState(null,'','#'+id)}catch(e){}}
-function openRoom(name,floor){lastFocus=document.activeElement;document.getElementById('modalLocation').textContent=floor+' · '+name;document.getElementById('modalTitle').textContent='En construcción';document.getElementById('modalDescription').textContent='La habitación «'+name+'» todavía no está implementada. Próximamente estará disponible en el edificio digital Serenamente.';overlay.classList.add('open');overlay.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';document.getElementById('closeModal').focus()}
+function workShell(title,body,description=''){return `<div class="work-head"><div><span class="pill">${safe(currentFloor)} · Habitación</span><h1>${safe(title)}</h1>${description?`<p class="muted">${safe(description)}</p>`:''}</div><div class="work-actions"><button class="small-btn" data-go="inicio">← Volver al inicio</button></div></div>${body}`}
+function formField(label,name,type='text',value='',required=true){return `<label class="field">${safe(label)}<input name="${safe(name)}" type="${type}" value="${safe(value)}" ${required?'required':''}></label>`}
+function selectPatient(){return `<label class="field">Paciente ficticio<select name="patientId" required>${options()}</select></label>`}
+function table(headers,rows){return `<div class="table-wrap"><table class="data-table"><thead><tr>${headers.map(h=>`<th>${safe(h)}</th>`).join('')}</tr></thead><tbody>${rows.length?rows.map(row=>`<tr>${row.map(cell=>`<td>${cell}</td>`).join('')}</tr>`).join(''):`<tr><td colspan="${headers.length}">Sin registros. Puedes crear el primero.</td></tr>`}</tbody></table></div>`}
+function formWrap(kind,fields,submit='Guardar registro'){return `<form data-form="${kind}" class="form-grid">${fields}<div class="field span2"><button class="cta" type="submit">${safe(submit)}</button></div></form>`}
+// Sprint 1: habitación Pacientes, adaptada desde index2 (modelo y operaciones).
+let patientSearch='',patientEditingId=null,patientViewingId=null;
+function patientRoom(){
+ const visible=db.patients.filter(p=>(role!=='medico'||p.assigned==='Médico')&&
+   [p.name,p.id,p.reason].join(' ').toLocaleLowerCase('es').includes(patientSearch.toLocaleLowerCase('es')));
+ const rows=visible.map(p=>`<tr><td><strong>${safe(p.name)}</strong><br><small>${safe(p.id)}</small></td><td>${safe(p.age)}</td><td>${safe(p.reason||'')}</td><td>${safe(p.assigned||'')}</td><td><span class="pill">${safe(p.status)}</span></td><td><button type="button" class="small-btn" data-patient-view="${safe(p.id)}">Ver</button></td></tr>`).join('');
+ const patient=patientViewingId&&db.patients.find(p=>p.id===patientViewingId);
+ const edit=patientEditingId&&db.patients.find(p=>p.id===patientEditingId);
+ const canManage=role==='psicologa'||role==='administrativo';
+ const select=(name,opts,value)=>`<label class="field">${name}<select name="${name==='Profesional asignado'?'assigned':'status'}" required>${opts.map(o=>`<option value="${safe(o)}" ${o===value?'selected':''}>${safe(o)}</option>`).join('')}</select></label>`;
+ const field=(label,name,type='text',value='')=>`<label class="field">${label}<input name="${name}" type="${type}" value="${safe(value)}" ${type==='number'?'min="0"':''} required></label>`;
+ const form=canManage?`<div class="work-card"><h3>${edit?'Editar paciente':'Nuevo paciente ficticio'}</h3><form data-form="patient-v5" data-patient-id="${safe(edit?.id||'')}">
+ ${field('Nombre ficticio','name','text',edit?.name)}${field('Edad','age','number',edit?.age)}${field('Teléfono ficticio','phone','text',edit?.phone)}${field('Correo de prueba','email','email',edit?.email)}${field('Motivo de consulta ficticio','reason','text',edit?.reason)}
+ ${select('Profesional asignado',['Luz Carime','Médico'],edit?.assigned||'Luz Carime')}${select('Estado',['Activo','Seguimiento','Cerrado'],edit?.status||'Activo')}
+ <div class="work-actions"><button class="small-btn" type="submit">${edit?'Guardar cambios':'Guardar paciente'}</button>${edit?'<button type="button" class="small-btn" data-patient-cancel>Cancelar edición</button>':''}</div></form></div>`:'';
+ const details=patient?`<div class="work-card wide"><h3>Ficha del paciente · ${safe(patient.id)}</h3><p><strong>${safe(patient.name)}</strong> · ${safe(patient.status)}</p><p>Edad: ${safe(patient.age)} · Profesional: ${safe(patient.assigned)}</p><p>Motivo: ${safe(patient.reason)}</p><p>Contacto ficticio: ${safe(patient.phone)} · ${safe(patient.email)}</p><div class="work-actions">${canManage?`<button type="button" class="small-btn" data-patient-edit="${safe(patient.id)}">Editar paciente</button>`:''}${role==='psicologa'||role==='medico'?'<button type="button" class="small-btn" data-patient-clinical>Abrir Expedientes</button>':''}<button type="button" class="small-btn" data-patient-close>Cerrar ficha</button></div></div>`:'';
+ return `<div class="notice">Datos 100% ficticios. Perfiles demostrativos: no existe autenticación real ni protección clínica.</div><div class="work-grid"><div class="work-card wide"><h3>Directorio de pacientes</h3><label class="field">Buscar por nombre, código o motivo<input id="patientSearchV5" type="search" value="${safe(patientSearch)}" placeholder="Buscar paciente ficticio..."></label><div class="table-wrap"><table class="table"><thead><tr><th>Paciente</th><th>Edad</th><th>Motivo</th><th>Profesional</th><th>Estado</th><th>Acción</th></tr></thead><tbody id="patientRowsV5">${rows||'<tr><td colspan="6">Sin resultados</td></tr>'}</tbody></table></div></div>${details}${form}</div>`;
+}
+function patientSaveV5(form){
+ if(!['psicologa','administrativo'].includes(role)){toast('Acción no disponible para este perfil simulado');return}
+ const data=Object.fromEntries(new FormData(form));data.name=data.name.trim();data.age=Number(data.age);
+ if(data.name.length<3||!Number.isFinite(data.age)||data.age<0||!data.email||!data.phone.trim()||!data.reason.trim()){toast('Completa los campos con datos ficticios válidos');return}
+ const id=form.dataset.patientId;
+ if(id){const original=db.patients.find(p=>p.id===id);if(!original){toast('Paciente no encontrado');return}Object.assign(original,data);audit('Edición ficticia de paciente '+id)}
+ else{const newId='PAC-'+String(db.patients.reduce((max,p)=>Math.max(max,Number(/^PAC-(\d+)$/.exec(p.id)?.[1]||0)),0)+1).padStart(3,'0');db.patients.push({...data,id:newId,created:new Date().toISOString().slice(0,10)});audit('Creación ficticia de paciente '+newId);patientViewingId=newId}
+ patientEditingId=null;persist('Paciente ficticio guardado');document.getElementById('workspaceBody').innerHTML=renderRoom('Pacientes');
+}
+
+// Sprint 2: citas y expedientes, preservando pacientes y datos locales de index5.
+let appointmentEditingId=null,clinicalSelectedId='PAC-001';
+function appointmentRoomRows(){
+ const visible=db.appointments.filter(a=>role!=='medico'||(a.professional||'Luz Carime')==='Médico').filter(a=>role!=='paciente'||a.patientId==='PAC-001');
+ return visible.map(a=>[safe(a.date)+' · '+safe(a.time),safe(patientName(a.patientId)),safe(a.service),safe(a.professional||'Luz Carime'),safe(a.mode||'Presencial'),`<span class="pill">${safe(a.status)}</span>`,role!=='paciente'?`<button type="button" class="small-btn" data-appointment-edit="${safe(a.id)}">Editar</button>`:'']);
+}
+function agendaRoom(){
+ const a=db.appointments.find(x=>x.id===appointmentEditingId&&(role!=='medico'||(x.professional||'Luz Carime')==='Médico'));
+ const choose=(field,values,current)=>`<label class="field">${safe(field)}<select name="${field==='Profesional'?'professional':field==='Modalidad'?'mode':'status'}" required>${values.map(v=>`<option ${v===current?'selected':''}>${safe(v)}</option>`).join('')}</select></label>`;
+ const currentPatient=a?.patientId||db.patients[0]?.id;
+ const select=`<label class="field">Paciente ficticio<select name="patientId" required>${db.patients.filter(p=>role!=='medico'||p.assigned==='Médico').map(p=>`<option value="${safe(p.id)}" ${p.id===currentPatient?'selected':''}>${safe(p.name)} · ${safe(p.id)}</option>`).join('')}</select></label>`;
+ const form=role==='paciente'?'<p>La solicitud de citas por pacientes es únicamente ilustrativa en esta versión.</p>':`<form data-form="appointment-v6" data-record-id="${safe(a?.id||'')}" class="form-grid">${select}${formField('Fecha','date','date',a?.date||today())}${formField('Hora','time','time',a?.time||'09:00')}${formField('Servicio','service','text',a?.service||'Psicología individual')}${choose('Profesional',['Luz Carime','Médico'],a?.professional||'Luz Carime')}${choose('Modalidad',['Presencial','Videollamada','Domicilio','Institucional'],a?.mode||'Presencial')}${choose('Estado',['Solicitada','Confirmada','Completada','Cancelada'],a?.status||'Solicitada')}<div class="field span2 work-actions"><button type="submit" class="cta">${a?'Guardar cambios':'Registrar cita'}</button>${a?'<button type="button" class="small-btn" data-appointment-cancel>Cancelar edición</button>':''}</div></form>`;
+ return `<div class="work-grid"><div class="work-card wide"><h3>Citas registradas</h3><p class="muted">Una misma persona profesional no puede tener dos citas activas a la misma fecha y hora.</p>${table(['Fecha y hora','Paciente','Servicio','Profesional','Modalidad','Estado','Acción'],appointmentRoomRows())}</div><div class="work-card"><h3>${a?'Editar cita':'Nueva cita ficticia'}</h3>${form}</div></div>`;
+}
+function saveAppointmentV6(form){
+ if(role==='paciente'||!can('Agenda')){toast('Acción no disponible para este perfil simulado');return}
+ const v=Object.fromEntries(new FormData(form));const id=form.dataset.recordId;
+ if(role==='medico'&&v.professional!=='Médico'){toast('El perfil Médico solo puede programar citas del profesional Médico');return}
+ if(!findPatient(v.patientId)||(role==='medico'&&findPatient(v.patientId).assigned!=='Médico')){toast('Selecciona un paciente permitido');return}
+ if(!v.date||!v.time||!v.service.trim()){toast('Completa fecha, hora y servicio');return}
+ const conflict=db.appointments.some(a=>a.id!==id&&a.date===v.date&&a.time===v.time&&(a.professional||'Luz Carime')===v.professional&&a.status!=='Cancelada'&&v.status!=='Cancelada');
+ if(conflict){toast('Conflicto de agenda: profesional y hora ocupados');return}
+ if(id){const old=db.appointments.find(a=>a.id===id);if(!old||(role==='medico'&&(old.professional||'Luz Carime')!=='Médico')){toast('Cita no disponible');return}Object.assign(old,v);audit('Edición de cita '+id)}
+ else{v.id=nextId(db.appointments,'CIT');db.appointments.push(v);audit('Creación de cita '+v.id)}
+ appointmentEditingId=null;persist('Cita ficticia guardada');document.getElementById('workspaceBody').innerHTML=renderRoom('Agenda');
+}
+function clinicalRoom(){
+ if(!db.patients.some(p=>p.id===clinicalSelectedId))clinicalSelectedId=db.patients[0]?.id||'';
+ if(role==='medico'&&findPatient(clinicalSelectedId)?.assigned!=='Médico')clinicalSelectedId=db.patients.find(p=>p.assigned==='Médico')?.id||'';
+ const allowedPatients=db.patients.filter(p=>role!=='medico'||p.assigned==='Médico');
+ const p=findPatient(clinicalSelectedId);
+ const sessions=db.sessions||[];
+ const timeline=sessions.filter(x=>x.patientId===clinicalSelectedId).map(x=>`<div class="work-card"><strong>${safe(x.date)} · ${safe(x.id)}</strong><p>${safe(x.summary)}</p><p><strong>Plan:</strong> ${safe(x.plan)}</p><small>${safe(x.professional)} · ${safe(x.episode)}</small></div>`).join('')||'<p class="muted">No hay sesiones registradas para este paciente.</p>';
+ const legacy=(db.notes||[]).filter(x=>x.patientId===clinicalSelectedId).map(n=>`<div class="work-card"><strong>${safe(n.date)} · ${safe(n.id)} (registro anterior)</strong><p>${safe(n.body)}</p><small>${safe(n.type)}</small></div>`).join('');
+ const chooser=`<label class="field">Seleccionar paciente ficticio<select id="clinicalPatientV6">${allowedPatients.map(x=>`<option value="${safe(x.id)}" ${x.id===clinicalSelectedId?'selected':''}>${safe(x.name)} · ${safe(x.id)}</option>`).join('')}</select></label>`;
+ const form=`<form data-form="session-v6" class="form-grid">${formField('Fecha','date','date',today())}<label class="field">Profesional<select name="professional">${['Luz Carime','Médico'].map(x=>`<option ${x===(role==='medico'?'Médico':'Luz Carime')?'selected':''}>${x}</option>`).join('')}</select></label>${formField('Código de episodio','episode','text','EPI-001')}<label class="field span2">Evolución ficticia<textarea name="summary" required placeholder="Solo información ficticia"></textarea></label><label class="field span2">Plan de seguimiento ficticio<textarea name="plan" required placeholder="Solo información ficticia"></textarea></label><div class="field span2"><button class="cta" type="submit">Registrar sesión ficticia</button></div></form>`;
+ return `<div class="work-grid"><div class="work-card wide"><h3>Ficha integradora</h3>${chooser}<p><strong>${safe(p?.name||'Sin paciente')}</strong> · ${safe(p?.id||'')}</p><p><strong>Motivo:</strong> ${safe(p?.reason||'')}</p><p><strong>Profesional asignado:</strong> ${safe(p?.assigned||'')}</p><p>${sessions.filter(x=>x.patientId===clinicalSelectedId).length} sesiones · ${(db.assessments||[]).filter(x=>x.patientId===clinicalSelectedId).length} evaluaciones · ${(db.reports||[]).filter(x=>x.patientId===clinicalSelectedId).length} informes</p><h3>Evoluciones longitudinales</h3>${timeline}${legacy}</div><div class="work-card"><h3>Nueva sesión</h3>${form}</div></div>`;
+}
+function saveSessionV6(form){
+ if(!['psicologa','medico'].includes(role)){toast('Acceso no disponible para este perfil simulado');return}
+ if(!findPatient(clinicalSelectedId)){toast('Selecciona un paciente');return}
+ if(role==='medico'&&findPatient(clinicalSelectedId).assigned!=='Médico'){toast('Paciente fuera del perfil simulado');return}
+ const v=Object.fromEntries(new FormData(form));
+ if(role==='medico'&&v.professional!=='Médico'){toast('Profesional no permitido');return}
+ if(!v.summary.trim()||!v.plan.trim()){toast('Completa evolución y plan');return}
+ if(!Array.isArray(db.sessions))db.sessions=[];
+ const record={...v,id:nextId(db.sessions,'SES'),patientId:clinicalSelectedId};db.sessions.push(record);audit('Registro de sesión ficticia '+record.id);persist('Sesión ficticia guardada');document.getElementById('workspaceBody').innerHTML=renderRoom('Expedientes');
+}
+
+// Sprint 3 · Evaluaciones e informes. Compatible con colecciones heredadas de index6.
+let assessmentEditingId=null,reportEditingId=null;
+function clinicalPatientsV7(){
+ return db.patients.filter(p=>role!=='medico'||p.assigned==='Médico');
+}
+function patientOptionsV7(chosen){
+ return clinicalPatientsV7().map(p=>`<option value="${safe(p.id)}" ${p.id===chosen?'selected':''}>${safe(p.name)} · ${safe(p.id)}</option>`).join('');
+}
+function canWriteClinicalV7(){return role==='psicologa'||role==='medico'}
+function normalizeAssessV7(a){
+ return {id:a.id,patientId:a.patientId,date:a.date||today(),instrument:a.instrument||a.name||'',result:a.result||'',status:a.status||'Borrador'};
+}
+function normalizeReportV7(r){
+ return {id:r.id,patientId:r.patientId,date:r.date||today(),type:r.type||r.title||'Informe de evolución',body:r.body||'',status:r.status||'Borrador',author:r.author||'Luz Carime'};
+}
+function evaluationsRoomV7(){
+ const records=db.assessments.map(normalizeAssessV7).filter(x=>role!=='medico'||findPatient(x.patientId)?.assigned==='Médico');
+ const edit=records.find(x=>x.id===assessmentEditingId);
+ const rows=records.map(x=>[safe(patientName(x.patientId)),safe(x.date),safe(x.instrument),safe(x.result),`<span class="pill">${safe(x.status)}</span>`,`<button type="button" class="small-btn" data-eval-edit-v7="${safe(x.id)}">Editar</button>`]);
+ const form=canWriteClinicalV7()?`<form class="form-grid" data-form="evaluation-v7" data-record-id="${safe(edit?.id||'')}">
+ <label class="field">Paciente ficticio<select name="patientId" required>${patientOptionsV7(edit?.patientId||clinicalSelectedId)}</select></label>
+ ${formField('Fecha','date','date',edit?.date||today())}
+ ${formField('Instrumento ilustrativo','instrument','text',edit?.instrument||'')}
+ <label class="field">Estado<select name="status"><option ${edit?.status==='Borrador'?'selected':''}>Borrador</option><option ${edit?.status==='Revisado'?'selected':''}>Revisado</option></select></label>
+ <label class="field span2">Resultado ficticio<textarea name="result" required>${safe(edit?.result||'')}</textarea></label>
+ <div class="field span2 work-actions"><button class="cta" type="submit">${edit?'Guardar cambios':'Registrar evaluación ficticia'}</button>${edit?'<button class="small-btn" type="button" data-eval-cancel-v7>Cancelar edición</button>':''}</div></form>`:'<p class="muted">No se permite editar con este perfil simulado.</p>';
+ return `<div class="work-grid"><div class="work-card wide"><h3>Evaluaciones ficticias</h3><p class="muted">Instrumentos y resultados ilustrativos; no son pruebas psicométricas válidas.</p>${table(['Paciente','Fecha','Instrumento','Resultado','Estado','Acción'],rows)}</div><div class="work-card"><h3>${edit?'Editar evaluación':'Nueva evaluación'}</h3>${form}</div></div>`;
+}
+function reportsRoomV7(){
+ const records=db.reports.map(normalizeReportV7).filter(x=>role!=='medico'||findPatient(x.patientId)?.assigned==='Médico');
+ const edit=records.find(x=>x.id===reportEditingId);
+ const rows=records.map(x=>[safe(patientName(x.patientId)),safe(x.date),safe(x.type),`<span class="pill">${safe(x.status)}</span>`,safe(x.author),`<button class="small-btn" type="button" data-report-edit-v7="${safe(x.id)}">Editar</button> <button class="small-btn" type="button" data-report-print-v7="${safe(x.id)}">Imprimir</button>`]);
+ const form=canWriteClinicalV7()?`<form class="form-grid" data-form="report-v7" data-record-id="${safe(edit?.id||'')}">
+ <label class="field">Paciente ficticio<select name="patientId" required>${patientOptionsV7(edit?.patientId||clinicalSelectedId)}</select></label>
+ ${formField('Fecha','date','date',edit?.date||today())}
+ <label class="field">Tipo de informe<select name="type">${['Informe inicial','Informe de evolución','Informe de evaluación','Remisión','Cierre'].map(v=>`<option ${v===(edit?.type||'Informe de evolución')?'selected':''}>${safe(v)}</option>`).join('')}</select></label>
+ <label class="field">Estado<select name="status">${['Borrador','En revisión'].map(v=>`<option ${v===(edit?.status||'Borrador')?'selected':''}>${safe(v)}</option>`).join('')}</select></label>
+ <label class="field">Autor<select name="author">${['Luz Carime','Médico'].map(v=>`<option ${v===(edit?.author||'Luz Carime')?'selected':''}>${safe(v)}</option>`).join('')}</select></label>
+ <label class="field span2">Contenido ficticio<textarea name="body" required>${safe(edit?.body||'')}</textarea></label>
+ <div class="field span2 work-actions"><button class="cta" type="submit">${edit?'Guardar cambios':'Crear borrador'}</button>${edit?'<button class="small-btn" type="button" data-report-cancel-v7>Cancelar edición</button>':''}</div></form>`:'<p class="muted">No se permite editar con este perfil simulado.</p>';
+ return `<div class="work-grid"><div class="work-card wide"><h3>Informes clínicos de demostración</h3><p class="muted">Documentos ficticios sin validez clínica. La impresión incluye marca de simulación.</p>${table(['Paciente','Fecha','Tipo','Estado','Autor','Acción'],rows)}</div><div class="work-card"><h3>${edit?'Editar borrador':'Nuevo borrador'}</h3>${form}</div></div>`;
+}
+function saveClinicalV7(form,kind){
+ if(!canWriteClinicalV7()){toast('Acción no permitida para el perfil simulado');return}
+ const data=Object.fromEntries(new FormData(form));
+ if(!clinicalPatientsV7().some(p=>p.id===data.patientId)){toast('Paciente no permitido');return}
+ const collection=kind==='evaluation'?'assessments':'reports';
+ if(kind==='evaluation'&&(!data.instrument.trim()||!data.result.trim())){toast('Completa instrumento y resultado');return}
+ if(kind==='report'&&!data.body.trim()){toast('Completa el contenido del informe');return}
+ const id=form.dataset.recordId;
+ if(id){
+   const old=db[collection].find(x=>x.id===id);
+   if(!old){toast('Registro no encontrado');return}
+   Object.assign(old,data);
+   if(kind==='evaluation')old.name=data.instrument;
+   else old.title=data.type;
+   audit('Edición '+collection+' · '+id);
+ }else{
+   const prefix=kind==='evaluation'?'EVA':'INF';
+   const record={...data,id:prefix+'-'+Date.now().toString(36).toUpperCase()};
+   if(kind==='evaluation')record.name=data.instrument;
+   else record.title=data.type;
+   db[collection].push(record);audit('Creación '+collection+' · '+record.id);
+ }
+ if(kind==='evaluation')assessmentEditingId=null;else reportEditingId=null;
+ persist('Registro ficticio guardado');
+ document.getElementById('workspaceBody').innerHTML=renderRoom(currentRoom);
+}
+function printReportV7(id){
+ const record=db.reports.find(r=>r.id===id);
+ if(!record||!canWriteClinicalV7()||(role==='medico'&&findPatient(record.patientId)?.assigned!=='Médico')){toast('Informe no disponible');return}
+ const r=normalizeReportV7(record);
+ const w=window.open('','_blank');
+ if(!w){toast('Permite ventanas emergentes para imprimir');return}
+ w.document.write(`<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Informe ficticio ${safe(r.id)}</title><style>body{font:16px/1.6 system-ui;max-width:780px;margin:50px auto;padding:20px;color:#283042}header{border-bottom:2px solid #ad8bd4;padding-bottom:12px}pre{white-space:pre-wrap;font:inherit}.watermark{color:#b34772;font-size:24px;font-weight:bold}@media print{button{display:none}}</style></head><body><header><h1>Serenamente · Informe de demostración</h1><div class="watermark">SIMULACIÓN · NO VÁLIDO PARA USO CLÍNICO</div></header><p><strong>Paciente:</strong> ${safe(patientName(r.patientId))} (${safe(r.patientId)})</p><p><strong>Fecha:</strong> ${safe(r.date)} · <strong>Tipo:</strong> ${safe(r.type)}</p><p><strong>Estado:</strong> ${safe(r.status)} · <strong>Autor:</strong> ${safe(r.author)}</p><h2>Contenido ficticio</h2><pre>${safe(r.body)}</pre><button onclick="window.print()">Imprimir</button></body></html>`);
+ w.document.close();
+}
+
+
+// Sprint 4: Seguimiento + Pagos. Se conservan las colecciones y el almacenamiento de index7.
+let followupEditV8=null,paymentEditV8=null;
+const todayV8=()=>new Date().toLocaleDateString('en-CA');
+function permittedPatientV8(id){return db.patients.some(p=>p.id===id&&(role!=='medico'||p.assigned==='Médico'))}
+function patientSelectV8(id){return `<label class="field">Paciente ficticio<select name="patientId" required>${db.patients.filter(p=>role!=='medico'||p.assigned==='Médico').map(p=>`<option value="${safe(p.id)}" ${id===p.id?'selected':''}>${safe(p.name)} · ${safe(p.id)}</option>`).join('')}</select></label>`}
+function followupRoomV8(){
+ const rows=db.followups.filter(f=>permittedPatientV8(f.patientId));
+ const edit=rows.find(f=>f.id===followupEditV8);
+ const canWrite=role==='psicologa'||role==='medico'||role==='administrativo';
+ const body=table(['Paciente','Fecha','Actividad','Estado','Acciones'],rows.map(f=>[
+  safe(patientName(f.patientId)),safe(f.date),safe(f.task||f.title),`<span class="pill">${safe(f.status)}</span>`,
+  canWrite?`<button type="button" class="small-btn" data-followup-edit-v8="${safe(f.id)}">Editar</button> <button type="button" class="small-btn" data-followup-toggle-v8="${safe(f.id)}">${f.status==='Completado'||f.status==='Completada'?'Reabrir':'Completar'}</button>`:'—'
+ ]));
+ const form=canWrite?`<form class="form-grid" data-form="followup-v8" data-record-id="${safe(edit?.id||'')}">
+ ${patientSelectV8(edit?.patientId)}
+ ${formField('Fecha','date','date',edit?.date||todayV8())}
+ <label class="field span2">Actividad ficticia<textarea name="task" required>${safe(edit?.task||edit?.title||'')}</textarea></label>
+ <label class="field">Estado<select name="status">${['Pendiente','Completado'].map(v=>`<option ${v===(edit?.status||'Pendiente')?'selected':''}>${v}</option>`).join('')}</select></label>
+ <div class="field span2 work-actions"><button class="cta" type="submit">${edit?'Guardar cambios':'Programar seguimiento'}</button>${edit?'<button type="button" class="small-btn" data-followup-cancel-v8>Cancelar</button>':''}</div></form>`:'<p class="muted">Sin permiso de edición en este perfil simulado.</p>';
+ return `<div class="work-grid"><div class="work-card wide"><h3>Seguimientos programados</h3><p class="muted">${rows.filter(x=>x.status==='Pendiente').length} pendientes · ${rows.length} registros ficticios</p>${body}</div><div class="work-card"><h3>${edit?'Editar seguimiento':'Programar seguimiento'}</h3>${form}</div></div>`;
+}
+function paymentsRoomV8(){
+ const rows=db.payments;
+ const edit=rows.find(x=>x.id===paymentEditV8);
+ const canWrite=role==='psicologa'||role==='administrativo';
+ const total=rows.reduce((n,p)=>n+(Number(p.amount)||0),0),paid=rows.reduce((n,p)=>n+(Number(p.paid)||0),0);
+ const body=table(['Paciente','Fecha','Concepto','Valor','Abonado','Saldo','Medio','Acción'],rows.map(x=>[
+  safe(patientName(x.patientId)),safe(x.date||'—'),safe(x.service||x.concept||''),money(x.amount),money(x.paid),money(Math.max(0,Number(x.amount)-Number(x.paid))),safe(x.method||'—'),
+  canWrite?`<button type="button" class="small-btn" data-payment-edit-v8="${safe(x.id)}">Editar</button>`:'—'
+ ]));
+ const form=canWrite?`<form class="form-grid" data-form="payment-v8" data-record-id="${safe(edit?.id||'')}">
+ ${patientSelectV8(edit?.patientId)}
+ ${formField('Fecha','date','date',edit?.date||todayV8())}
+ ${formField('Concepto','service','text',edit?.service||edit?.concept||'Consulta individual')}
+ ${formField('Valor (COP)','amount','number',edit?.amount??120000)}
+ ${formField('Abonado (COP)','paid','number',edit?.paid??0)}
+ <label class="field">Medio de pago<select name="method">${['Efectivo','Transferencia','Nequi','Daviplata','Tarjeta','Otro'].map(v=>`<option ${v===(edit?.method||'Transferencia')?'selected':''}>${v}</option>`).join('')}</select></label>
+ <div class="field span2 work-actions"><button class="cta" type="submit">${edit?'Guardar cambios':'Registrar pago simulado'}</button>${edit?'<button type="button" class="small-btn" data-payment-cancel-v8>Cancelar</button>':''}</div></form>`:'<p class="muted">Sin permiso de edición en este perfil simulado.</p>';
+ return `<div class="work-grid"><div class="work-card wide"><h3>Pagos simulados y saldos</h3><p class="muted">Facturado: <strong>${money(total)}</strong> · Abonado: <strong>${money(paid)}</strong> · Saldo: <strong>${money(Math.max(0,total-paid))}</strong></p>${body}</div><div class="work-card"><h3>${edit?'Editar movimiento':'Registrar pago ficticio'}</h3>${form}</div></div>`;
+}
+function saveFinanceV8(form,kind){
+ const isPayment=kind==='payment',collection=isPayment?'payments':'followups';
+ if(isPayment&&!['psicologa','administrativo'].includes(role)){toast('Perfil sin permiso para pagos');return}
+ if(!isPayment&&!['psicologa','medico','administrativo'].includes(role)){toast('Perfil sin permiso');return}
+ const d=Object.fromEntries(new FormData(form));
+ if(!permittedPatientV8(d.patientId)){toast('Paciente no permitido');return}
+ if(isPayment){
+  d.amount=Number(d.amount);d.paid=Number(d.paid);
+  if(!Number.isFinite(d.amount)||!Number.isFinite(d.paid)||d.amount<0||d.paid<0||d.paid>d.amount){toast('El abono debe estar entre 0 y el valor del servicio');return}
+  d.concept=d.service;
+ }else if(!d.task?.trim()){toast('Describe la actividad ficticia');return}
+ const id=form.dataset.recordId;
+ if(id){
+  const old=db[collection].find(x=>x.id===id);
+  if(!old||(!isPayment&&!permittedPatientV8(old.patientId))){toast('Registro no disponible');return}
+  Object.assign(old,d);audit('Edición ficticia de '+collection+' · '+id);
+ }else{
+  const prefix=isPayment?'PAG':'SEG';
+  const idNew=prefix+'-'+Date.now().toString(36).toUpperCase()+'-'+Math.floor(Math.random()*1000);
+  db[collection].push({...d,id:idNew});audit('Creación ficticia de '+collection+' · '+idNew);
+ }
+ if(isPayment)paymentEditV8=null;else followupEditV8=null;
+ persist('Registro ficticio guardado');
+ document.getElementById('workspaceBody').innerHTML=renderRoom(currentRoom);
+}
+function toggleFollowupV8(id){
+ if(!['psicologa','medico','administrativo'].includes(role))return;
+ const f=db.followups.find(x=>x.id===id);
+ if(!f||!permittedPatientV8(f.patientId))return;
+ f.status=(f.status==='Completado'||f.status==='Completada')?'Pendiente':'Completado';
+ audit('Seguimiento '+id+' → '+f.status);persist('Estado de seguimiento actualizado');
+ document.getElementById('workspaceBody').innerHTML=renderRoom('Seguimiento');
+}
+
+
+// Sprint 5 · Gestión y trazabilidad. Todo permanece en el navegador (datos ficticios).
+let auditFilterV9='',agreementEditingV9=null;
+const moneyV9=v=>new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(Number(v)||0);
+function indicatorsRoomV9(){
+ const counts=[['Pacientes',db.patients.length],['Citas',db.appointments.length],['Sesiones / evoluciones',(db.sessions?.length||0)+(db.notes?.length||0)],['Evaluaciones',db.assessments.length],['Informes',db.reports.length],['Seguimientos',db.followups.length],['Convenios ficticios',db.agreements.length],['Eventos registrados',db.log.length]];
+ const amount=db.payments.reduce((v,p)=>v+(Number(p.amount)||0),0),paid=db.payments.reduce((v,p)=>v+(Number(p.paid)||0),0);
+ const pending=db.followups.filter(f=>f.status==='Pendiente').length;
+ const cards=counts.map(([label,val])=>`<div class="work-card"><h3>${safe(label)}</h3><div class="stat">${val}</div><p class="muted">Datos locales de demostración</p></div>`).join('');
+ return `<div class="work-grid">${cards}<div class="work-card wide"><h3>Resumen financiero ficticio</h3><p><strong>Total:</strong> ${moneyV9(amount)} · <strong>Abonado:</strong> ${moneyV9(paid)} · <strong>Saldo:</strong> ${moneyV9(Math.max(0,amount-paid))}</p><p><strong>Seguimientos pendientes:</strong> ${pending}</p><p class="muted">Indicadores calculados a partir de los registros disponibles en este navegador; no son estadísticas institucionales reales.</p></div></div>`;
+}
+function auditRoomV9(){
+ const logs=db.log.filter(l=>[l.action,l.role,l.at,l.date,l.detail].join(' ').toLocaleLowerCase('es').includes(auditFilterV9.toLocaleLowerCase('es')));
+ return `<div class="work-grid"><div class="work-card wide"><h3>Bitácora de acciones</h3><p class="muted">Últimos ${db.log.length} eventos conservados localmente. Este registro no constituye una auditoría de seguridad.</p><label class="field">Filtrar eventos<input id="auditSearchV9" value="${safe(auditFilterV9)}" placeholder="Acción, fecha o perfil"></label><div id="auditRowsV9">${auditRowsV9(logs)}</div></div></div>`;
+}
+function auditRowsV9(rows){return table(['Fecha','Perfil simulado','Acción'],rows.map(l=>[safe(l.at||l.date||'—'),safe(l.role||'—'),safe(l.action||l.detail||'—')]))}
+function agreementsRoomV9(){
+ const rows=db.agreements;
+ const edit=rows.find(x=>x.id===agreementEditingV9);
+ const canWrite=role==='psicologa'||role==='administrativo';
+ const tableHTML=table(['Código','Organización','Servicio','Cupos','Estado','Acción'],rows.map(a=>[safe(a.id),safe(a.organization),safe(a.service),safe(a.quota),safe(a.status||'Borrador'),canWrite?`<button type="button" class="small-btn" data-agreement-edit-v9="${safe(a.id)}">Editar</button>`:'—']));
+ const form=canWrite?`<form class="form-grid" data-form="agreement-v9" data-record-id="${safe(edit?.id||'')}">
+ ${formField('Organización ficticia','organization','text',edit?.organization||'')}
+ ${formField('Servicio ilustrativo','service','text',edit?.service||'')}
+ ${formField('Cupos','quota','number',edit?.quota??10)}
+ <label class="field">Estado<select name="status">${['Borrador','En revisión','Cerrado'].map(v=>`<option ${v===(edit?.status||'Borrador')?'selected':''}>${v}</option>`).join('')}</select></label>
+ <div class="field span2 work-actions"><button class="cta" type="submit">${edit?'Guardar cambios':'Registrar convenio ficticio'}</button>${edit?'<button type="button" class="small-btn" data-agreement-cancel-v9>Cancelar edición</button>':''}</div></form>`:'<p class="muted">Este perfil no tiene edición habilitada.</p>';
+ return `<div class="work-grid"><div class="work-card wide"><h3>Convenios institucionales · simulación</h3><p class="muted">Catálogo ilustrativo. No administra contratos, firmas, facturación ni obligaciones legales.</p>${tableHTML}</div><div class="work-card"><h3>${edit?'Editar convenio ficticio':'Nuevo convenio ficticio'}</h3>${form}</div></div>`;
+}
+function saveAgreementV9(form){
+ if(!['psicologa','administrativo'].includes(role)){toast('Perfil sin permiso de edición');return}
+ const data=Object.fromEntries(new FormData(form));
+ data.organization=(data.organization||'').trim();data.service=(data.service||'').trim();data.quota=Number(data.quota);
+ if(data.organization.length<3||!data.service||!Number.isInteger(data.quota)||data.quota<0){toast('Verifica organización, servicio y cupos');return}
+ const id=form.dataset.recordId;
+ if(id){const existing=db.agreements.find(x=>x.id===id);if(!existing){toast('Convenio no encontrado');return}Object.assign(existing,data);audit('Edición de convenio ficticio · '+id)}
+ else{const newId='V-'+Date.now().toString(36).toUpperCase()+'-'+Math.floor(Math.random()*1000);db.agreements.push({...data,id:newId});audit('Creación de convenio ficticio · '+newId)}
+ agreementEditingV9=null;persist('Convenio ficticio guardado');document.getElementById('workspaceBody').innerHTML=renderRoom('Convenios Institucionales');
+}
+
+function workflowLinksV10(name){
+ const rooms=['Pacientes','Agenda','Expedientes','Evaluaciones','Reportes clínicos','Seguimiento','Pagos'];
+ if(!rooms.includes(name))return '';
+ return `<nav aria-label="Flujo de atención ficticia" class="work-card" style="margin-bottom:16px;padding:14px"><strong style="display:block;margin-bottom:10px">Flujo integrado</strong><div class="action-row">${rooms.filter(r=>can(r)).map(r=>`<button type="button" class="small-btn" data-room="${safe(r)}" data-floor="${r==='Pagos'?'Piso 4':'Piso 3'}" ${r===name?'aria-current="page" style="outline:2px solid #a879c9"':''}>${safe(r)}</button>`).join('')}</div></nav>`;
+}
+
+// Sprint 10 · Auditoría de equivalencia (análisis estático; no certificación funcional).
+const auditMatrixV14=[["Pacientes", "patients / patientRows / viewPatient", "patientRoom / patientSaveV5", "Implementado; pruebas de edición y permisos pendientes", "P0"], ["Agenda", "agenda / submitForm", "agendaRoom / saveAppointmentV6", "Implementado; verificar conflictos y roles en navegador", "P0"], ["Expedientes y sesiones", "clinical / submitForm", "clinicalRoom / saveSessionV6", "Implementado; comprobar asociaciones y edición", "P0"], ["Evaluaciones", "evaluations / submitForm", "evaluationsRoomV7 / saveClinicalV7", "Implementado; esquema de campos no idéntico", "P1"], ["Informes", "reports / submitForm", "reportsRoomV7 / printReportV7", "Implementado; impresión añadida, validar compatibilidad", "P1"], ["Seguimientos", "followup / toggleTask", "followupRoomV8 / toggleFollowupV8", "Implementado; tareas originales no equivalen 1:1 a followups", "P0"], ["Pagos", "payments / submitForm", "paymentsRoomV8 / saveFinanceV8", "Implementado; verificar abonos y saldo", "P1"], ["Convenios", "agreements", "agreementsRoomV9 / saveAgreementV9", "Ampliación del placeholder original, no equivalencia estricta", "P2"], ["Bitácora", "audit", "auditRoomV9", "Implementado; esquema log distinto a audit", "P0"], ["Indicadores", "home / lab", "indicatorsRoomV9", "Ampliación de index13; revisar consistencia", "P2"], ["Recorrido guiado", "guide", "renderGuide / openGuideStepV10", "Implementado con navegación diferente", "P1"], ["Laboratorio y restauración", "lab / resetDemo", "renderLab / labIntegrityV10", "Implementado; verificar reset y escenarios", "P1"], ["Exportación e importación", "exportDemo / importDemo", "exportJSON / importJSON", "BRECHA: formatos JSON incompatibles; requiere conversor explícito", "P0"], ["Datos e identificadores", "validate / save", "load / persist / nextId", "BRECHA: modelo de datos y claves de almacenamiento distintos", "P0"], ["Roles simulados", "setRole / restricted", "demoRole / can", "Implementado visualmente; no seguridad real", "P0"], ["Fidelidad visual", "—", "index3 visual + index13", "Pendiente comparación visual en navegador y móvil", "P1"]];
+function auditMatrixRoomV14(){
+ const gaps=auditMatrixV14.filter(r=>r[3].startsWith('BRECHA'));
+ const body=auditMatrixV14.map(r=>`<tr><td><strong>${safe(r[0])}</strong></td><td>${safe(r[1])}</td><td>${safe(r[2])}</td><td>${safe(r[3])}</td><td>${safe(r[4])}</td></tr>`).join('');
+ return `<div class="work-grid"><div class="work-card full"><h3>Matriz de equivalencia · index2 → index14</h3><p class="muted">Diagnóstico estático de código fuente. «Implementado» significa que se encontró código correspondiente; no significa que todas las pruebas de navegador estén superadas.</p><div class="notice"><strong>${gaps.length} brechas estructurales explícitas</strong>: formato de intercambio JSON y modelo de almacenamiento. No importar un archivo de index2 directamente en index14.</div><div class="table-wrap" style="overflow-x:auto"><table class="table"><thead><tr><th>Componente</th><th>Origen index2</th><th>Destino index14</th><th>Dictamen</th><th>Prioridad</th></tr></thead><tbody>${body}</tbody></table></div><p class="muted">P0: corregir antes de declarar equivalencia. P1: regresión prioritaria. P2: ampliaciones o diferencias documentadas.</p><div class="action-row"><button class="small-btn" data-action="audit-csv-v14">↓ Exportar matriz CSV</button><button class="small-btn" data-action="lab-check-v10">✓ Comprobar integridad de datos</button></div></div></div>`;
+}
+function exportAuditCsvV14(){
+ const cells=[['Componente','Origen index2','Destino index14','Dictamen estático','Prioridad'],...auditMatrixV14];
+ const csv=cells.map(row=>row.map(x=>'"'+String(x).replace(/"/g,'""')+'"').join(';')).join('\r\n');
+ const blob=new Blob(['\ufeff'+csv],{type:'text/csv;charset=utf-8'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='matriz_equivalencia_index14.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
+function renderRoom(name){const notices='<div class="notice">⚠ Demostración con datos ficticios. No ingresar información personal o clínica real. Los permisos de esta versión son únicamente visuales.</div>';
+let body='';
+if(name==='Pacientes')body=patientRoom();
+else if(name==='Agenda')body=agendaRoom();
+else if(name==='Expedientes')body=clinicalRoom();
+else if(name==='Evaluaciones')body=evaluationsRoomV7();
+else if(name==='Reportes clínicos')body=reportsRoomV7();
+else if(name==='Seguimiento')body=followupRoomV8();
+else if(name==='Pagos')body=paymentsRoomV8();
+else if(name==='Indicadores')body=indicatorsRoomV9();
+else if(name==='Bitácora')body=auditRoomV9();
+else if(name==='Asistente IA')body='<div class="work-card"><h3>Asistente IA · demostración</h3><p>En esta versión no hay conexión a proveedores de inteligencia artificial. Las funciones clínicas asistidas por IA requerirán validación profesional, controles de privacidad y una integración segura.</p><div class="guide-box">Ejemplo de tarea futura: estructurar un borrador de seguimiento a partir de datos ficticios, para revisión del profesional.</div></div>';
+else if(name==='Laboratorio')body=renderLab();
+else if(name==='Auditoría de equivalencia')body=auditMatrixRoomV14();
+else if(name==='Inspección de integridad')body=labCheckRoomV10();
+else if(name==='Recorrido guiado')body=renderGuide();
+else if(name==='Equipo profesional')body='<div class="work-card"><img src="assets/equipo.png" alt="Ilustración original Nuestro Equipo" style="width:100%;max-width:900px;margin:auto"><p>Equipo profesional · Presentación institucional demostrativa. Los perfiles e identidades reales se incorporarán previa aprobación.</p></div>';
+else if(name==='Inicio')body='<div class="work-card"><h3>Bienvenido al Edificio Digital</h3><p>Serenamente organiza sus servicios y procesos en cuatro pisos conectados. Explora el edificio desde la portada original.</p><button class="cta" data-go="inicio">Ir al inicio</button></div>';
+else if(name==='Contacto'||name==='WhatsApp'||name==='Agendar cita')body=`<div class="work-card"><h3>Solicitud de contacto · simulación</h3><p>Este formulario es ilustrativo. No envía mensajes, no reserva citas reales y no está conectado a WhatsApp.</p>${formWrap('contact',formField('Nombre ficticio','name')+formField('Correo de ejemplo','contact','email','demo@ejemplo.test')+'<label class="field span2">Mensaje ficticio<textarea name="message" required></textarea></label>','Simular solicitud')}</div>`;
+else if(['Psicología clínica','Terapia individual','Terapia de pareja','Terapia familiar','Terapias especializadas','Grupos de apoyo'].includes(name)){
+const imgs={'Psicología clínica':'clinica.png','Terapia individual':'individual.png','Terapia de pareja':'pareja.png','Terapia familiar':'familiar.png','Terapias especializadas':'especializadas.png','Grupos de apoyo':'grupos.png'};
+body=`<div class="room-list"><div class="work-card"><img src="assets/${imgs[name]}" alt="${safe(name)}"><h3>${safe(name)}</h3><p>Espacio de información del servicio. La descripción institucional y condiciones de atención deberán ser aprobadas por Serenamente.</p><button class="cta" data-room="Agendar cita" data-floor="Piso 2">Solicitar cita · demo</button></div><div class="work-card"><h3>Cómo funciona</h3><p>Explora el servicio y utiliza la solicitud simulada. El equipo profesional definirá las indicaciones y condiciones específicas de atención.</p></div></div>`}
+else if(name==='Nosotros'||name==='Misión')body=`<div class="work-card"><h3>${safe(name)}</h3><p>Espacio institucional preparado para incorporar el contenido oficial de Serenamente, sujeto a revisión y aprobación.</p></div>`;
+
+
+else if(name==='Remisiones')body=`<div class="work-grid"><div class="work-card wide"><h3>Remisiones e interconsultas · simulación</h3>${table(['Paciente','Fecha','Destino','Motivo','Estado'],db.referrals.map(r=>[safe(patientName(r.patientId)),safe(r.date),safe(r.to),safe(r.reason),safe(r.status)]))}</div><div class="work-card"><h3>Nueva remisión ficticia</h3>${formWrap('referrals',selectPatient()+formField('Fecha','date','date',new Date().toISOString().slice(0,10))+formField('Profesional de destino','to')+formField('Motivo ilustrativo','reason'))}</div></div>`;
+else if(name==='Convenios Institucionales')body=agreementsRoomV9();
+else if(name==='Tareas')body=`<div class="work-grid"><div class="work-card wide"><h3>Tareas y responsables</h3>${table(['Paciente','Vencimiento','Tarea','Responsable','Estado','Acción'],db.tasks.map(t=>[safe(patientName(t.patientId)),safe(t.date),safe(t.task),safe(t.assigned),safe(t.status),t.status==='Pendiente'?`<button class="small-btn" data-complete-task="${safe(t.id)}">Marcar completada</button>`:'✓']))}</div><div class="work-card"><h3>Nueva tarea ficticia</h3>${formWrap('tasks',selectPatient()+formField('Vencimiento','date','date',new Date().toISOString().slice(0,10))+formField('Descripción','task')+formField('Responsable','assigned','text','Luz Carime'))}</div></div>`;
+else body='<div class="work-card"><h3>Habitación preparada</h3><p>Este espacio conserva su ubicación en el edificio y se desarrollará progresivamente.</p></div>';
+return workShell(name,notices+workflowLinksV10(name)+body,name==='Laboratorio'?'Administración de escenarios ficticios':name==='Recorrido guiado'?'Recorre los procesos del edificio paso a paso':'Funcionalidad demostrativa integrada en el edificio original')}
+
+// Sprint 31 · Diagnóstico explícito del origen de almacenamiento.
+function inspectEnvironmentV35(){
+ const checks=[];
+ const record=(name,ok,detail)=>checks.push({name,ok,detail});
+ const origin=location.origin||'sin origen';
+ record('Origen de navegación',location.protocol==='https:'||location.protocol==='http:',origin+' · '+location.protocol);
+ try{const key='serenamente_v35_probe';const old=localStorage.getItem(key);localStorage.setItem(key,'ok');record('Escritura y lectura localStorage',localStorage.getItem(key)==='ok','Prueba temporal de lectura');if(old===null)localStorage.removeItem(key);else localStorage.setItem(key,old)}catch(e){record('Escritura y lectura localStorage',false,e.message)}
+ try{record('Datos activos válidos',!!validateScenarioV16(db),'Colecciones y referencias comprobadas')}catch(e){record('Datos activos válidos',false,e.message)}
+ record('Prueba de recarga real',false,'No ejecutada en esta inspección; utilizar el botón de recarga');
+ const el=document.getElementById('environmentResultV35');
+ if(el)el.innerHTML=`<p><strong>${checks.filter(x=>x.ok).length}/${checks.length} controles favorables.</strong> El control de recarga permanece pendiente por diseño.</p>${table(['Control','Estado','Detalle'],checks.map(x=>[safe(x.name),x.ok?'✓':'Pendiente / error',safe(x.detail)]))}`;
+ return checks;
+}
+
+// Sprint 29: validación y vista previa de importación del formato actual.
+let modernCandidateV33=null;
+function modernDecodeV33(raw){
+ if(!raw||raw.format!=='serenamente-pmv-1'||!raw.data||typeof raw.data!=='object')throw Error('Formato no compatible');
+ const required=['patients','appointments','notes','assessments','reports','payments','followups','log'];
+ const optional=['tasks','referrals','agreements','sessions'];
+ for(const k of required)if(!Array.isArray(raw.data[k]))throw Error('Falta colección obligatoria: '+k);
+ const candidate={};for(const k of [...required,...optional])candidate[k]=raw.data[k]??[];
+ validateScenarioV16(candidate);return candidate;
+}
+async function modernPreviewFileV33(file){
+ modernCandidateV33=null;
+ const preview=document.getElementById('modernPreviewV33'),commit=document.getElementById('modernCommitV33');if(commit)commit.disabled=true;
+ if(!file){if(preview)preview.textContent='Ningún archivo seleccionado.';return}
+ try{
+  if(file.size>1024*1024)throw Error('El archivo supera 1 MB');
+  const candidate=modernDecodeV33(JSON.parse(await file.text()));
+  modernCandidateV33=JSON.parse(JSON.stringify(candidate));
+  if(preview)preview.innerHTML=`<p><strong>Vista previa válida.</strong> Pacientes: ${candidate.patients.length}; citas: ${candidate.appointments.length}; sesiones: ${candidate.sessions.length}; evaluaciones: ${candidate.assessments.length}; informes: ${candidate.reports.length}; pagos: ${candidate.payments.length}.</p><p><strong>Advertencia:</strong> confirmar sustituye el escenario local. Descarga antes un respaldo.</p>`;
+  if(commit)commit.disabled=false;
+ }catch(err){if(preview)preview.textContent='Archivo rechazado: '+err.message}
+}
+function modernCommitV33(){
+ if(!modernCandidateV33){toast('Primero selecciona un archivo válido');return}
+ if(!['psicologa','administrativo'].includes(role)){toast('Perfil sin permiso de importación');return}
+ if(!confirm('¿Sustituir el escenario ficticio actual? Descarga antes un respaldo.'))return;
+ const staged=JSON.parse(JSON.stringify(modernCandidateV33));
+ staged.log.unshift({at:new Date().toLocaleString('es-CO'),role,action:'Importación confirmada de JSON actual'});
+ staged.log=staged.log.slice(0,100);
+ try{localStorage.setItem(STORAGE,JSON.stringify(staged))}catch(err){toast('No se pudo guardar: '+err.message);return}
+ db=staged;modernCandidateV33=null;
+ patientViewingId=null;patientEditingId=null;appointmentEditingId=null;assessmentEditingId=null;reportEditingId=null;followupEditV8=null;paymentEditV8=null;agreementEditingV9=null;
+ toast('Importación confirmada');document.getElementById('workspaceBody').innerHTML=renderRoom('Laboratorio');
+}
+function runExchangeAuditV33(){
+ const snapshot=JSON.stringify(db),checks=[];
+ const add=(name,ok,detail='')=>checks.push({name,ok:!!ok,detail});
+ try{
+  const payload=JSON.stringify({format:'serenamente-pmv-1',data:db});
+  add('Exportación JSON',payload.length>0);
+  const candidate=modernDecodeV33(JSON.parse(payload));
+  add('Importación y validación',!!candidate);
+  add('Conservación de colecciones',collectionsV16.every(k=>JSON.stringify(candidate[k])===JSON.stringify(db[k]??[])));
+  try{modernDecodeV33({format:'serenamente-pmv-1',data:{...candidate,appointments:[...candidate.appointments,{id:'C-TEST',patientId:'PAC-INEXISTENTE'}]}});add('Rechazo de referencias huérfanas',false)}catch(e){add('Rechazo de referencias huérfanas',true,e.message)}
+  try{modernDecodeV33({format:'serenamente-pmv-1',data:{...candidate,payments:[...candidate.payments,{id:'P-TEST',amount:5,paid:10}]}});add('Rechazo de pago inválido',false)}catch(e){add('Rechazo de pago inválido',true,e.message)}
+  add('Escenario sin cambios',snapshot===JSON.stringify(db));
+ }catch(e){add('Ejecución',false,e.message)}
+ const host=document.getElementById('exchangeAuditResultV33');if(host)host.innerHTML=`<p><strong>${checks.filter(x=>x.ok).length}/${checks.length} controles satisfactorios</strong></p>${table(['Control','Estado','Detalle'],checks.map(x=>[safe(x.name),x.ok?'Correcto':'Fallido',safe(x.detail)]))}`;
+ return {passed:checks.filter(x=>x.ok).length,total:checks.length,checks};
+}
+// Sprint 12: pure, read-only roundtrip diagnostics; no localStorage writes.
+const collectionsV16=['patients','appointments','notes','assessments','reports','payments','followups','log','tasks','referrals','agreements','sessions'];
+function validateScenarioV16(data){
+ if(!data||typeof data!=='object'||Array.isArray(data))throw Error('Escenario inválido');
+ const out={};
+ for(const k of collectionsV16){const v=data[k]??[];if(!Array.isArray(v)||v.length>2000)throw Error('Colección inválida: '+k);out[k]=v}
+ const ids=new Set();
+ for(const p of out.patients){if(!p||typeof p.id!=='string'||!p.id||ids.has(p.id)||typeof p.name!=='string')throw Error('Paciente duplicado o inválido');ids.add(p.id)}
+ for(const k of collectionsV16){
+  const seen=new Set();
+  for(const r of out[k]){
+   if(!r||typeof r!=='object'||Array.isArray(r))throw Error('Registro inválido en '+k);
+   if(k!=='log'&&(!r.id||typeof r.id!=='string'||seen.has(r.id)))throw Error('Identificador inválido o duplicado en '+k);
+   if(k!=='log')seen.add(r.id);
+   if(r.patientId!==undefined&&!ids.has(r.patientId))throw Error('Referencia huérfana en '+k);
+  }
+ }
+ for(const p of out.payments){const a=Number(p.amount),b=Number(p.paid);if(!Number.isFinite(a)||!Number.isFinite(b)||a<0||b<0||b>a)throw Error('Importe de pago inválido')}
+ return out;
+}
+function roundtripReportV16(data){
+ const report=[];
+ const test=(name,fn)=>{try{fn();report.push({name,ok:true})}catch(e){report.push({name,ok:false,detail:e.message})}};
+ let encoded,decoded;
+ test('Esquema y referencias',()=>validateScenarioV16(data));
+ test('Exportación serializable',()=>{encoded=JSON.stringify({format:'serenamente-pmv-1',data});if(!encoded)throw Error('No serializable')});
+ test('Importación del propio JSON',()=>{decoded=JSON.parse(encoded);if(decoded.format!=='serenamente-pmv-1')throw Error('Formato incorrecto');validateScenarioV16(decoded.data)});
+ test('Conservación de registros y relaciones',()=>{if(!decoded)throw Error('Sin JSON');for(const k of collectionsV16){if(JSON.stringify(decoded.data[k]??[])!==JSON.stringify(data[k]??[]))throw Error('Diferencias en '+k)}});
+ test('Sin modificar el escenario activo',()=>{if(JSON.stringify(data)!==JSON.stringify(decoded?.data))throw Error('El ciclo no preserva el escenario')});
+ return report;
+}
+function runRoundtripV16(){
+ const el=document.getElementById('roundtripResultV16');if(!el)return;
+ const report=roundtripReportV16(db),good=report.filter(x=>x.ok).length;
+ el.innerHTML=`<p><strong>${good}/${report.length} controles superados</strong> · Prueba en memoria, sin reemplazar datos ni recargar la página.</p><ul>${report.map(x=>`<li>${x.ok?'✓':'✕'} ${safe(x.name)}${x.detail?' · '+safe(x.detail):''}</li>`).join('')}</ul><p class="muted">Esta prueba verifica serialización, estructura y relaciones; la persistencia real después de recargar requiere prueba manual.</p>`;
+}
+// Sprint 13 · Persistencia comprobable entre recargas sin modificar el escenario clínico ficticio.
+const PROBE_V17='serenamente_persist_probe_v17';
+const PROBE_SESSION_V17='serenamente_persist_probe_pending_v17';
+function persistenceStartV17(){
+ const target=document.getElementById('persistenceResultV17');
+ try{
+  const baseline=JSON.stringify(db),stored=localStorage.getItem(STORAGE);
+  if(stored!==baseline){localStorage.setItem(STORAGE,baseline);if(localStorage.getItem(STORAGE)!==baseline)throw Error('No se pudo confirmar el guardado del escenario');}
+  const token='prueba-'+Date.now()+'-'+Math.random().toString(36).slice(2);
+  localStorage.setItem(PROBE_V17,token);
+  if(localStorage.getItem(PROBE_V17)!==token)throw Error('No se pudo escribir la marca de prueba');
+  sessionStorage.setItem(PROBE_SESSION_V17,JSON.stringify({token,baseline,at:new Date().toISOString()}));
+  target.innerHTML='<p>✓ Escritura verificada. Se recargará esta página para comprobar lectura y conservación de los datos ficticios.</p>';
+  location.reload();
+ }catch(e){if(target)target.textContent='✕ No se pudo iniciar la prueba: '+e.message;}
+}
+function persistenceFinishV17(){
+ let pending;
+ try{pending=JSON.parse(sessionStorage.getItem(PROBE_SESSION_V17)||'null')}catch(e){}
+ if(!pending)return;
+ sessionStorage.removeItem(PROBE_SESSION_V17);
+ const checks=[];
+ checks.push(['Marca de prueba conservada',localStorage.getItem(PROBE_V17)===pending.token]);
+ checks.push(['Escenario guardado sin cambios',localStorage.getItem(STORAGE)===pending.baseline]);
+ checks.push(['Escenario reconstruido al iniciar',JSON.stringify(db)===pending.baseline]);
+ try{validateScenarioV16(db);checks.push(['Relaciones y valores válidos',true])}catch(e){checks.push(['Relaciones y valores válidos',false])}
+ localStorage.removeItem(PROBE_V17);
+ const result={at:new Date().toLocaleString('es-CO'),checks};
+ try{sessionStorage.setItem('serenamente_persist_result_v17',JSON.stringify(result))}catch(e){}
+}
+function persistenceResultV17(){
+ let r;try{r=JSON.parse(sessionStorage.getItem('serenamente_persist_result_v17')||'null')}catch(e){}
+ return r?`<p><strong>${r.checks.filter(x=>x[1]).length}/${r.checks.length} comprobaciones superadas</strong> · ${safe(r.at)}</p><ul>${r.checks.map(([name,ok])=>`<li>${ok?'✓':'✕'} ${safe(name)}</li>`).join('')}</ul>`:'<p class="muted">Todavía no se ha ejecutado una prueba entre recargas en este navegador.</p>';
+}
+// Sprint 14 · Auditoría no destructiva de edición y regresión.
+function regressionSuiteV18(){
+ const checks=[];
+ const check=(name,fn)=>{try{fn();checks.push({name,ok:true})}catch(e){checks.push({name,ok:false,detail:String(e.message||e)})}};
+ const assert=(condition,message)=>{if(!condition)throw Error(message)};
+ const original=JSON.stringify(db);
+ let fixture;
+ check('Clonación aislada del escenario',()=>{fixture=JSON.parse(original);assert(fixture!==db,'La copia comparte referencia')});
+ if(!fixture)return checks;
+ const id='PAC-REGRESION-18';
+ const patient={id,name:'Paciente de prueba V18',age:28,phone:'0000000',email:'demo@example.invalid',reason:'Prueba ficticia',assigned:'Luz Carime',status:'Activo'};
+ check('Crear paciente ficticio en memoria',()=>{fixture.patients.push(patient);assert(fixture.patients.some(p=>p.id===id),'No creado')});
+ check('Editar paciente conservando ID',()=>{const p=fixture.patients.find(x=>x.id===id);p.reason='Motivo editado';assert(p.id===id&&p.reason==='Motivo editado','Cambio inesperado')});
+ const cases=[
+  ['Agenda','appointments',{date:'2026-11-04',time:'10:00',professional:'Luz Carime',service:'Sesión ficticia',status:'Programada'},'service','Sesión editada'],
+  ['Evaluaciones','assessments',{date:'2026-11-04',instrument:'Instrumento ficticio',result:'Resultado ficticio',status:'Borrador'},'result','Resultado editado'],
+  ['Reportes clínicos','reports',{date:'2026-11-04',type:'Informe de evolución',body:'Texto ficticio',status:'Borrador'},'body','Texto editado'],
+  ['Seguimiento','followups',{date:'2026-11-04',task:'Seguimiento ficticio',status:'Pendiente'},'status','Completado'],
+  ['Pagos','payments',{date:'2026-11-04',service:'Consulta ficticia',amount:120000,paid:30000,method:'Transferencia'},'paid',60000],
+  ['Convenios','agreements',{organization:'Institución ficticia',service:'Orientación ficticia',quota:5,status:'Activo'},'quota',8]
+ ];
+ for(const [label,collection,record,field,changed] of cases){
+  check('Crear y editar '+label+' sin cambiar ID',()=>{
+   const newId='REG18-'+collection;const item={...record,id:newId,...(collection==='agreements'?{}:{patientId:id})};
+   fixture[collection].push(item);
+   const found=fixture[collection].find(x=>x.id===newId);
+   assert(found&&found.id===newId,'No se creó el registro');
+   found[field]=changed;
+   assert(found.id===newId&&found[field]===changed,'Edición incorrecta');
+  });
+ }
+ check('Relaciones y esquema del escenario editado',()=>validateScenarioV16(fixture));
+ check('Rechazar referencia huérfana',()=>{
+  const bad=JSON.parse(JSON.stringify(fixture));bad.appointments.at(-1).patientId='PAC-INEXISTENTE';
+  let rejected=false;try{validateScenarioV16(bad)}catch(e){rejected=true}
+  assert(rejected,'Se aceptó una referencia inválida');
+ });
+ check('Rechazar abono mayor al valor',()=>{
+  const bad=JSON.parse(JSON.stringify(fixture));bad.payments.at(-1).paid=999999;
+  let rejected=false;try{validateScenarioV16(bad)}catch(e){rejected=true}
+  assert(rejected,'Se aceptó un abono inválido');
+ });
+ check('Exportar e importar copia editada',()=>{
+  const payload=JSON.stringify({format:'serenamente-pmv-1',data:fixture});
+  const restored=validateScenarioV16(JSON.parse(payload).data);
+  assert(JSON.stringify(restored)===JSON.stringify(Object.fromEntries(collectionsV16.map(k=>[k,fixture[k]]))),'Diferencias tras serialización');
+ });
+ check('Almacenamiento temporal de prueba',()=>{
+  const key='serenamente-regression-v18-temporary';
+  try{localStorage.setItem(key,JSON.stringify(fixture));assert(localStorage.getItem(key)===JSON.stringify(fixture),'Lectura diferente')}finally{localStorage.removeItem(key)}
+ });
+ check('Escenario activo permanece intacto',()=>assert(JSON.stringify(db)===original,'La prueba alteró los datos activos'));
+ return checks;
+}
+function runRegressionV18(){
+ const checks=regressionSuiteV18();
+ const report={at:new Date().toLocaleString('es-CO'),checks};
+ const el=document.getElementById('regressionResultV18');
+ if(el)el.innerHTML=`<p><strong>${checks.filter(c=>c.ok).length} de ${checks.length} controles superados</strong> · ${safe(report.at)}</p><ul>${checks.map(c=>`<li>${c.ok?'✓':'✕'} ${safe(c.name)}${c.detail?' — '+safe(c.detail):''}</li>`).join('')}</ul><p class="muted">Prueba sobre una copia en memoria. No sustituye la comprobación manual de formularios, permisos y recarga.</p>`;
+}
+
+// Sprint 15 · Inspección no destructiva de formularios y perfiles simulados.
+function runFormRoleAuditV19(){
+ const host=document.getElementById('formRoleAuditResultV19');if(!host)return;
+ const before={role,currentRoom,currentFloor,patientEditingId,patientViewingId,appointmentEditingId,assessmentEditingId,reportEditingId,followupEditV8,paymentEditV8};
+ const snapshot=JSON.stringify(db);
+ const rules=[
+  ['Pacientes','patient-v5',['psicologa','administrativo']],
+  ['Agenda','appointment-v6',['psicologa','medico','administrativo']],
+  ['Expedientes','session-v6',['psicologa','medico']],
+  ['Evaluaciones','evaluation-v7',['psicologa','medico']],
+  ['Reportes clínicos','report-v7',['psicologa','medico']],
+  ['Seguimiento','followup-v8',['psicologa','medico','administrativo']],
+  ['Pagos','payment-v8',['psicologa','administrativo']],
+  ['Convenios Institucionales','agreement-v9',['psicologa','administrativo']]
+ ];
+ const roles=['psicologa','medico','administrativo','paciente','visitante'];
+ const outcomes=[];
+ try{
+  patientEditingId=null;patientViewingId=null;appointmentEditingId=null;assessmentEditingId=null;reportEditingId=null;followupEditV8=null;paymentEditV8=null;
+  for(const [room,formId,allowed] of rules){
+   for(const r of roles){
+    role=r;
+    // Evaluate the room's actual generated HTML without mounting or submitting a form.
+    const html=renderRoom(room);
+    const fragment=document.createElement('template');fragment.innerHTML=html;
+    const found=!!fragment.content.querySelector('form[data-form="'+formId+'"]');
+    const expected=allowed.includes(r);
+    outcomes.push({room,profile:r,expected,found,ok:found===expected});
+   }
+  }
+ }catch(err){outcomes.push({room:'Motor de auditoría',profile:'—',expected:true,found:false,ok:false,error:String(err.message||err)})}
+ finally{
+  role=before.role;currentRoom=before.currentRoom;currentFloor=before.currentFloor;
+  patientEditingId=before.patientEditingId;patientViewingId=before.patientViewingId;appointmentEditingId=before.appointmentEditingId;
+  assessmentEditingId=before.assessmentEditingId;reportEditingId=before.reportEditingId;followupEditV8=before.followupEditV8;paymentEditV8=before.paymentEditV8;
+ }
+ const unchanged=JSON.stringify(db)===snapshot;
+ const failures=outcomes.filter(x=>!x.ok);
+ const lines=outcomes.map(x=>`<tr><td>${safe(x.room)}</td><td>${safe(x.profile)}</td><td>${x.expected?'Sí':'No'}</td><td>${x.found?'Sí':'No'}</td><td>${x.ok?'✓ Coincide':'⚠ Revisar'}</td></tr>`).join('');
+ host.innerHTML=`<p><strong>${outcomes.length-failures.length}/${outcomes.length}</strong> comprobaciones de presencia de formularios según perfil · <strong>${unchanged?'Datos intactos':'⚠ Datos alterados'}</strong></p>${failures.length?'<p class="muted">Se detectaron diferencias; no se han corregido automáticamente.</p>':'<p class="muted">No se detectaron diferencias en presencia de formularios. Esto no prueba autorizaciones del servidor ni envío de formularios.</p>'}<div class="table-wrap"><table class="table"><thead><tr><th>Habitación</th><th>Perfil</th><th>Formulario esperado</th><th>Formulario encontrado</th><th>Resultado</th></tr></thead><tbody>${lines}</tbody></table></div>`;
+}
+
+
+// Sprint 16: auditoría visual y de navegación. No altera registros ni almacenamiento.
+async function runVisualAuditV20(){
+ const host=document.getElementById('visualAuditResultV20');if(!host)return;
+ host.textContent='Inspeccionando estructura, navegación e imágenes…';
+ const results=[];
+ const check=(area,name,ok,detail='')=>results.push({area,name,ok:!!ok,detail});
+ const floorNames=['Identidad Institucional','Servicios Especializados','Gestión Clínica','Inteligencia y Gestión'];
+ check('Edificio','Cuatro pisos originales',floors.length===4,floors.length+' pisos');
+ floorNames.forEach((n,i)=>check('Edificio',n,floors[i]?.name===n,floors[i]?.name||'Ausente'));
+ const expected=[['Inicio','Nosotros','Misión','Equipo profesional','Contacto'],['Psicología clínica','Terapia individual','Terapia de pareja','Terapia familiar','Terapias especializadas','Grupos de apoyo'],['Pacientes','Expedientes','Agenda','Seguimiento','Evaluaciones','Reportes clínicos','Remisiones'],['Asistente IA','Reportes','Bitácora','Indicadores','Pagos','Convenios Institucionales']];
+ expected.forEach((rooms,i)=>rooms.forEach(room=>check('Habitaciones','Piso '+(i+1)+' · '+room,!!floors[i]?.rooms?.some(r=>r[0]===room),'Habitación en el inventario')));
+ check('Navegación','Botón de inicio',!!document.querySelector('[data-go="inicio"]'));
+ check('Navegación','Botón de servicios',!!document.querySelector('[data-go="piso2"]'));
+ check('Navegación','Recorrido guiado',!!document.querySelector('[data-action="guide"]'));
+ check('Navegación','Laboratorio',!!document.querySelector('[data-action="lab"]'));
+ check('Navegación','Panel de habitaciones',!!document.getElementById('workspaceBody'));
+ check('Adaptabilidad','Etiqueta viewport',!!document.querySelector('meta[name="viewport"]'));
+ check('Adaptabilidad','Reglas CSS responsivas',Array.from(document.styleSheets).some(sheet=>{try{return Array.from(sheet.cssRules).some(r=>r.conditionText&&r.conditionText.includes('max-width'))}catch(e){return false}}));
+ const viewport=window.innerWidth;
+ const docWidth=document.documentElement.scrollWidth;
+ check('Adaptabilidad','Sin desbordamiento horizontal actual',docWidth<=viewport+3,'Ancho documento '+docWidth+'px / ventana '+viewport+'px; repetir en móvil');
+ const images=[...new Set([...document.querySelectorAll('img[src]')].map(i=>i.getAttribute('src')).concat(floors.map(f=>'assets/'+f.image)))];
+ for(const src of images){
+  const ok=await new Promise(resolve=>{const img=new Image();img.onload=()=>resolve(true);img.onerror=()=>resolve(false);img.src=src;});
+  check('Recursos','Imagen '+src,ok,ok?'Disponible':'No encontrada; comprobar carpeta assets/');
+ }
+ const passed=results.filter(r=>r.ok).length;
+ const lines=results.map(r=>`<tr><td>${safe(r.area)}</td><td>${safe(r.name)}</td><td>${r.ok?'✓':'⚠'}</td><td>${safe(r.detail)}</td></tr>`).join('');
+ host.innerHTML=`<p><strong>${passed}/${results.length} controles satisfactorios</strong> en este navegador (${viewport}px). Los resultados no prueban fidelidad visual píxel a píxel ni equivalencia funcional.</p><div class="table-wrap"><table class="table"><thead><tr><th>Área</th><th>Control</th><th>Estado</th><th>Observación</th></tr></thead><tbody>${lines}</tbody></table></div><button type="button" class="small-btn" data-action="visual-audit-export-v20">Exportar resultados JSON</button>`;
+ window.__visualAuditV20={date:new Date().toISOString(),viewport,results};
+}
+function exportVisualAuditV20(){
+ const report=window.__visualAuditV20;if(!report){toast('Ejecuta primero la inspección visual');return}
+ const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='auditoria_visual_index20.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
+
+
+
+// Sprint 23 · Inspección de formularios visibles y almacenamiento real (solo lectura).
+function inspectBrowserV27(){
+ const tests=[];const add=(name,ok,detail)=>tests.push({name,ok:!!ok,detail});
+ const roomNames=floors.flatMap(f=>f.rooms.map(r=>r[0]));
+ add('Navegación: botones de habitaciones',roomNames.every(n=>[...document.querySelectorAll('[data-room]')].some(b=>b.dataset.room===n)),roomNames.length+' habitaciones declaradas');
+ add('Navegación: cuatro pisos',floors.every(f=>!!document.getElementById(f.id)),'Secciones disponibles en el documento');
+ const saved=(()=>{try{return localStorage.getItem(STORAGE)}catch(e){return null}})();
+ add('Almacenamiento local accesible',(()=>{try{return !!localStorage}catch(e){return false}})(),'No escribe ni reemplaza datos');
+ add('Escenario actual válido',Array.isArray(db.patients)&&Array.isArray(db.appointments),'Pacientes: '+db.patients.length);
+ add('Persistencia: coincidencia con almacenamiento',saved!==null&&JSON.stringify(JSON.parse(saved))===JSON.stringify(db),saved===null?'Aún no se ha guardado el escenario':'Comparación exacta con almacenamiento');
+ const forms=['patient-v5','appointment-v6','session-v6','evaluation-v7','report-v7','followup-v8','payment-v8','agreement-v9'];
+ const originalRoom=currentRoom,originalFloor=currentFloor,originalRole=role;
+ try{role='psicologa';for(const [room,kind] of [['Pacientes',forms[0]],['Agenda',forms[1]],['Expedientes',forms[2]],['Evaluaciones',forms[3]],['Reportes clínicos',forms[4]],['Seguimiento',forms[5]],['Pagos',forms[6]],['Convenios Institucionales',forms[7]]]){
+ currentRoom=room;currentFloor=['Pagos','Convenios Institucionales'].includes(room)?'Piso 4':'Piso 3';const html=renderRoom(room);const doc=document.createElement('div');doc.innerHTML=html;add('Formulario '+room,!!doc.querySelector('form[data-form="'+kind+'"]'),kind);
+ }}catch(e){add('Inspección de formularios',false,e.message)}finally{currentRoom=originalRoom;currentFloor=originalFloor;role=originalRole}
+ const host=document.getElementById('browserAuditV27');if(host)host.innerHTML=`<p><strong>${tests.filter(t=>t.ok).length}/${tests.length} controles satisfactorios.</strong> Las comprobaciones de presencia no sustituyen el envío de formularios ni la recarga del navegador.</p>${table(['Control','Estado','Detalle'],tests.map(t=>[safe(t.name),t.ok?'Correcto':'Pendiente / fallo',safe(t.detail)]))}`;
+ return tests;
+}
+
+// Sprint 20 · Pruebas ejecutables de manejadores reales con aislamiento de almacenamiento.
+let handlerTestResultV24=null;
+function runHandlerTestsV24(){
+ const original={db,role,currentRoom,currentFloor,patientViewingId,patientEditingId,appointmentEditingId,assessmentEditingId,reportEditingId,followupEditV8,paymentEditV8,agreementEditingV9,clinicalSelectedId,persist,toast};
+ const checks=[];
+ const check=(label,ok,detail)=>checks.push({label,ok:!!ok,detail:detail||''});
+ const makeForm=(kind,fields,id='')=>{
+  const form=document.createElement('form');form.dataset.form=kind;
+  if(kind==='patient-v5')form.dataset.patientId=id;else form.dataset.recordId=id;
+  for(const [name,value] of Object.entries(fields)){
+   const input=document.createElement('input');input.name=name;input.value=String(value);form.appendChild(input);
+  }
+  return form;
+ };
+ const id='PAC-V24-'+Date.now().toString(36).toUpperCase();
+ try{
+  db=JSON.parse(JSON.stringify(original.db));role='psicologa';currentRoom='Pacientes';currentFloor='Piso 3';
+  // Intercept all persistence: tests must never touch the real localStorage key.
+  persist=function(){};
+  toast=function(){};
+  const patient={name:'Paciente Ficticio V24',age:'32',phone:'0000000000',email:'v24@example.invalid',reason:'Prueba automatizada',assigned:'Luz Carime',status:'Activo'};
+  const patientBefore=db.patients.length;
+  patientSaveV5(makeForm('patient-v5',patient));
+  const p=db.patients.find(x=>x.email===patient.email);
+  check('Crear paciente mediante manejador real',!!p&&db.patients.length===patientBefore+1,p?.id||'No se creó');
+  if(p){
+   patientSaveV5(makeForm('patient-v5',{...patient,reason:'Motivo editado'},p.id));
+   check('Editar paciente y conservar identificador',db.patients.find(x=>x.id===p.id)?.reason==='Motivo editado',p.id);
+   currentRoom='Agenda';
+   const appointment={patientId:p.id,date:'2032-04-19',time:'13:45',service:'Sesión de prueba',professional:'Luz Carime',mode:'Presencial',status:'Confirmada'};
+   const n=db.appointments.length;
+   saveAppointmentV6(makeForm('appointment-v6',appointment));
+   const a=db.appointments.find(x=>x.patientId===p.id&&x.time==='13:45');
+   check('Crear cita mediante manejador real',!!a&&db.appointments.length===n+1,a?.id||'No se creó');
+   saveAppointmentV6(makeForm('appointment-v6',appointment));
+   check('Rechazar colisión de agenda',db.appointments.length===n+1,'No debe existir segunda cita en el mismo horario');
+   if(a){
+    saveAppointmentV6(makeForm('appointment-v6',{...appointment,service:'Servicio editado'},a.id));
+    check('Editar cita y conservar identificador',db.appointments.find(x=>x.id===a.id)?.service==='Servicio editado',a.id);
+   }
+   currentRoom='Evaluaciones';
+   const beforeEval=db.assessments.length;
+   saveClinicalV7(makeForm('evaluation-v7',{patientId:p.id,date:'2032-04-19',instrument:'Instrumento simulado',result:'Prueba de interfaz',status:'Borrador'}),'evaluation');
+   check('Crear evaluación mediante manejador real',db.assessments.length===beforeEval+1,'Asociada al paciente de prueba');
+   currentRoom='Pagos';
+   const beforePay=db.payments.length;
+   saveFinanceV8(makeForm('payment-v8',{patientId:p.id,date:'2032-04-19',service:'Consulta ficticia',amount:'100000',paid:'40000',method:'Efectivo'}),'payment');
+   check('Registrar pago mediante manejador real',db.payments.length===beforePay+1,'Abono parcial');
+   saveFinanceV8(makeForm('payment-v8',{patientId:p.id,date:'2032-04-19',service:'Consulta ficticia',amount:'100000',paid:'120000',method:'Efectivo'}),'payment');
+   check('Rechazar abono superior al valor',db.payments.length===beforePay+1,'Sin crear movimiento inválido');
+
+   // Sprint 21: más habitaciones usando sus manejadores de guardado reales.
+   clinicalSelectedId=p.id;
+   currentRoom='Expedientes';
+   const beforeSession=db.sessions.length;
+   saveSessionV6(makeForm('session-v6',{date:'2032-04-19',professional:'Luz Carime',episode:'EPI-V25',summary:'Evolución de simulación',plan:'Plan de simulación'}));
+   const ses=db.sessions.find(x=>x.patientId===p.id&&x.episode==='EPI-V25');
+   check('Registrar sesión en Expedientes',!!ses&&db.sessions.length===beforeSession+1,ses?.id||'No se creó');
+   currentRoom='Reportes clínicos';
+   const beforeReport=db.reports.length;
+   saveClinicalV7(makeForm('report-v7',{patientId:p.id,date:'2032-04-19',type:'Informe de evolución',body:'Borrador de simulación',status:'Borrador',author:'Luz Carime'}),'report');
+   const report=db.reports.find(x=>x.patientId===p.id&&x.body==='Borrador de simulación');
+   check('Crear informe mediante manejador real',!!report&&db.reports.length===beforeReport+1,report?.id||'No se creó');
+   if(report){
+    saveClinicalV7(makeForm('report-v7',{patientId:p.id,date:'2032-04-19',type:'Informe de evolución',body:'Borrador corregido',status:'En revisión',author:'Luz Carime'},report.id),'report');
+    check('Editar informe conservando ID',db.reports.find(x=>x.id===report.id)?.body==='Borrador corregido',report.id);
+   }
+   currentRoom='Seguimiento';
+   const beforeFollow=db.followups.length;
+   saveFinanceV8(makeForm('followup-v8',{patientId:p.id,date:'2032-04-20',task:'Seguimiento simulado V25',status:'Pendiente'}),'followup');
+   const follow=db.followups.find(x=>x.patientId===p.id&&x.task==='Seguimiento simulado V25');
+   check('Crear seguimiento mediante manejador real',!!follow&&db.followups.length===beforeFollow+1,follow?.id||'No se creó');
+   if(follow){
+    saveFinanceV8(makeForm('followup-v8',{patientId:p.id,date:'2032-04-20',task:'Seguimiento editado V25',status:'Pendiente'},follow.id),'followup');
+    check('Editar seguimiento conservando ID',db.followups.find(x=>x.id===follow.id)?.task==='Seguimiento editado V25',follow.id);
+    toggleFollowupV8(follow.id);
+    check('Completar seguimiento',db.followups.find(x=>x.id===follow.id)?.status==='Completado',follow.id);
+    toggleFollowupV8(follow.id);
+    check('Reabrir seguimiento',db.followups.find(x=>x.id===follow.id)?.status==='Pendiente',follow.id);
+   }
+   currentRoom='Convenios Institucionales';
+   const beforeAgreement=db.agreements.length;
+   saveAgreementV9(makeForm('agreement-v9',{organization:'Organización ficticia V25',service:'Servicio de prueba',quota:'10',status:'Borrador'}));
+   const agreement=db.agreements.find(x=>x.organization==='Organización ficticia V25');
+   check('Crear convenio mediante manejador real',!!agreement&&db.agreements.length===beforeAgreement+1,agreement?.id||'No se creó');
+   if(agreement){
+    saveAgreementV9(makeForm('agreement-v9',{organization:'Organización ficticia V25',service:'Servicio actualizado',quota:'12',status:'En revisión'},agreement.id));
+    check('Editar convenio conservando ID',db.agreements.find(x=>x.id===agreement.id)?.quota===12&&db.agreements.find(x=>x.id===agreement.id)?.service==='Servicio actualizado',agreement.id);
+   }
+   check('Relaciones del caso ficticio',[
+    ['appointments',a?.id],['sessions',ses?.id],['assessments',db.assessments.find(x=>x.patientId===p.id)?.id],
+    ['reports',report?.id],['payments',db.payments.find(x=>x.patientId===p.id)?.id],
+    ['followups',follow?.id]
+   ].every(([k,id])=>!!id&&db[k].some(x=>x.id===id&&x.patientId===p.id)),'Seis colecciones con el mismo paciente');
+
+  }
+ }catch(error){check('Ejecución del banco de pruebas',false,String(error.message))}
+ finally{
+  db=original.db;role=original.role;currentRoom=original.currentRoom;currentFloor=original.currentFloor;
+  patientViewingId=original.patientViewingId;patientEditingId=original.patientEditingId;
+  appointmentEditingId=original.appointmentEditingId;assessmentEditingId=original.assessmentEditingId;reportEditingId=original.reportEditingId;
+  followupEditV8=original.followupEditV8;paymentEditV8=original.paymentEditV8;agreementEditingV9=original.agreementEditingV9;clinicalSelectedId=original.clinicalSelectedId;
+  persist=original.persist;toast=original.toast;
+ }
+ check('Escenario activo restaurado',db===original.db&&persist===original.persist&&toast===original.toast&&role===original.role,'Estado y manejadores de persistencia restaurados');
+ handlerTestResultV24={at:new Date().toISOString(),total:checks.length,passed:checks.filter(x=>x.ok).length,checks,scope:'Manejadores reales, formularios sintéticos y base de datos aislada; no equivale a interacción humana ni prueba de recarga'};
+ const host=document.getElementById('handlerTestsV24');
+ if(host)host.innerHTML=`<p><strong>${handlerTestResultV24.passed}/${handlerTestResultV24.total} pruebas superadas.</strong> Sin modificaciones a los datos persistidos.</p>${table(['Prueba','Estado','Detalle'],checks.map(x=>[safe(x.label),x.ok?'Correcta':'Fallida',safe(x.detail)]))}`;
+ return handlerTestResultV24;
+}
+
+// Sprint 19 · Auditoría de operaciones reales de interfaz (ejecución manual guiada).
+const uiScenariosV23=[
+ ['Pacientes','Crear paciente ficticio','Abrir Pacientes, completar los siete campos y guardar; comprobar que aparece en el directorio.'],
+ ['Pacientes','Editar paciente','Abrir la ficha, editar el motivo y comprobar que el identificador PAC permanece igual.'],
+ ['Agenda','Crear cita','Seleccionar el paciente nuevo, fecha, hora y profesional; guardar y verificar la fila.'],
+ ['Agenda','Bloquear colisión','Intentar registrar otra cita activa para el mismo profesional, fecha y hora; debe rechazarse.'],
+ ['Expedientes','Registrar sesión','Seleccionar el paciente y registrar una evolución ficticia; verificar su aparición en el expediente.'],
+ ['Evaluaciones','Crear y editar evaluación','Registrar una evaluación, editar el resultado y comprobar la asociación al paciente.'],
+ ['Reportes clínicos','Crear y editar informe','Registrar un borrador ficticio, editarlo y verificar que conserva el mismo ID.'],
+ ['Seguimiento','Completar y reabrir','Crear un seguimiento, completarlo y reabrirlo; verificar los cambios de estado.'],
+ ['Pagos','Validar abono','Registrar un abono parcial; comprobar saldo y rechazo de un abono mayor al valor.'],
+ ['Convenios Institucionales','Editar convenio','Crear y editar un convenio ficticio; verificar su estado y registro en Bitácora.'],
+ ['Laboratorio','Exportar e importar','Respaldar JSON, importar el mismo archivo y comprobar que conserva los identificadores.'],
+ ['Laboratorio','Persistencia','Recargar el navegador y verificar que los registros ficticios siguen disponibles.'],
+ ['Perfiles','Restricciones','Cambiar a Médico, Administrativo, Paciente y Visitante; comprobar las habitaciones y formularios permitidos.']
+];
+let uiReviewV23={};
+function renderUiReviewV23(){
+ const rows=uiScenariosV23.map(([room,title,instruction],i)=>{
+  const state=uiReviewV23[i]||'Pendiente';
+  return `<tr><td>${i+1}</td><td>${safe(room)}</td><td><strong>${safe(title)}</strong><br><small>${safe(instruction)}</small></td><td><select aria-label="Resultado de ${safe(title)}" data-ui-review-v23="${i}">${['Pendiente','Superada','Fallida','No aplica'].map(v=>`<option ${v===state?'selected':''}>${v}</option>`).join('')}</select></td></tr>`;
+ }).join('');
+ const values=Object.values(uiReviewV23);
+ return `<div class="work-card full"><h3>Sprint 19 · Pruebas de interfaz real</h3><p>Lista de comprobación para ejecutar <strong>manualmente</strong> sobre formularios y datos ficticios. Las opciones no ejecutan las pruebas ni certifican resultados por sí solas.</p><p>Superadas: ${values.filter(v=>v==='Superada').length} · Fallidas: ${values.filter(v=>v==='Fallida').length} · Pendientes: ${uiScenariosV23.length-values.filter(v=>v!=='Pendiente').length}</p><div class="table-wrap"><table class="data-table"><thead><tr><th>#</th><th>Habitación</th><th>Acción verificable</th><th>Resultado</th></tr></thead><tbody>${rows}</tbody></table></div><button class="small-btn" type="button" data-action="ui-review-export-v23">Exportar acta de pruebas JSON</button> <button class="small-btn" type="button" data-action="ui-review-reset-v23">Limpiar resultados</button></div>`;
+}
+function exportUiReviewV23(){
+ const report={version:'index23',kind:'acta-manual-de-interfaz',date:new Date().toISOString(),tests:uiScenariosV23.map(([room,title,instruction],i)=>({room,title,instruction,result:uiReviewV23[i]||'Pendiente'}))};
+ const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='acta-interfaz-index23.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
+// Sprint 18 · Recorrido de extremo a extremo en memoria (sin datos clínicos reales).
+let endToEndLastV22=null;
+function endToEndV22(){
+ const data=JSON.parse(JSON.stringify(db));
+ const steps=[];
+ const check=(name,condition,detail)=>steps.push({step:name,ok:!!condition,detail});
+ const marker='V22-'+Date.now().toString(36).toUpperCase();
+ const pid='PAC-'+marker;
+ const create=(key,prefix,fields)=>{
+  if(!Array.isArray(data[key]))throw new Error('Falta colección '+key);
+  const record={id:prefix+'-'+marker,patientId:pid,...fields};
+  data[key].push(record);
+  return record;
+ };
+ const before=JSON.stringify(db);
+ try{
+  if(!Array.isArray(data.patients))throw new Error('No existe la colección patients');
+  const patient={id:pid,name:'Paciente de simulación '+marker,age:30,phone:'0000000',email:'simulacion@example.invalid',reason:'Caso de prueba',assigned:'Luz Carime',status:'Activo',created:todayV8()};
+  data.patients.push(patient);
+  check('1 · Paciente',data.patients.some(p=>p.id===pid),'Identificador '+pid);
+  const appointment=create('appointments','CIT',{date:todayV8(),time:'09:00',professional:'Luz Carime',status:'Programada',service:'Atención ficticia'});
+  check('2 · Agenda',data.appointments.some(a=>a.id===appointment.id&&a.patientId===pid),'Cita '+appointment.id);
+  const session=create('sessions','SES',{appointmentId:appointment.id,date:todayV8(),professional:'Luz Carime',evolution:'Simulación',plan:'Simulación'});
+  check('3 · Expediente',session.appointmentId===appointment.id,'Sesión vinculada a cita');
+  const evaluation=create('assessments','EVA',{date:todayV8(),instrument:'Instrumento ficticio',name:'Instrumento ficticio',result:'Resultado de prueba',status:'Borrador'});
+  check('4 · Evaluación',evaluation.patientId===pid,'Evaluación vinculada a paciente');
+  const report=create('reports','INF',{date:todayV8(),type:'Informe de evolución',title:'Informe de evolución',body:'Documento de prueba',status:'Borrador',author:'Luz Carime'});
+  check('5 · Informe',report.patientId===pid,'Informe vinculado a paciente');
+  const payment=create('payments','PAG',{date:todayV8(),service:'Atención ficticia',concept:'Atención ficticia',amount:100000,paid:40000,method:'Transferencia'});
+  check('6 · Pago',payment.patientId===pid&&payment.amount-payment.paid===60000,'Saldo ficticio: 60.000 COP');
+  const followup=create('followups','SEG',{date:todayV8(),task:'Seguimiento de prueba',status:'Pendiente'});
+  check('7 · Seguimiento',followup.patientId===pid,'Seguimiento vinculado a paciente');
+  const related=['appointments','sessions','assessments','reports','payments','followups'];
+  check('8 · Identidad compartida',related.every(k=>data[k].some(r=>r.patientId===pid)),'Seis colecciones relacionadas');
+  const review=integrationReportV21(data);
+  check('9 · Integridad estructural',review.summary.failed===0,review.summary.failed+' observaciones en validador integral');
+  const parsed=JSON.parse(JSON.stringify(data));
+  check('10 · Ida y vuelta JSON',related.every(k=>parsed[k].some(r=>r.patientId===pid))&&parsed.patients.some(p=>p.id===pid),'Referencias conservadas tras serialización');
+ }catch(error){check('Ejecución interrumpida',false,error.message)}
+ check('11 · Datos originales intactos',JSON.stringify(db)===before,'El recorrido trabaja sobre una copia en memoria');
+ endToEndLastV22={version:'index22',generatedAt:new Date().toISOString(),passed:steps.filter(x=>x.ok).length,total:steps.length,steps};
+ return endToEndLastV22;
+}
+function runEndToEndV22(){
+ const host=document.getElementById('endToEndResultV22');if(!host)return;
+ const r=endToEndV22();
+ host.innerHTML=`<p><strong>${r.passed}/${r.total} comprobaciones satisfactorias.</strong> Esta prueba usa copias en memoria; no envía formularios ni guarda datos en el navegador.</p><div class="table-wrap"><table class="table"><thead><tr><th>Etapa</th><th>Estado</th><th>Detalle</th></tr></thead><tbody>${r.steps.map(x=>`<tr><td>${safe(x.step)}</td><td>${x.ok?'✓':'⚠'}</td><td>${safe(x.detail)}</td></tr>`).join('')}</tbody></table></div>`;
+}
+function exportEndToEndV22(){
+ if(!endToEndLastV22){toast('Ejecuta primero el recorrido de prueba');return}
+ const blob=new Blob([JSON.stringify(endToEndLastV22,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=url;a.download='recorrido-integral-index22.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
+// Sprint 17 · Auditoría de integración; solo lectura de db.
+let integrationLastV21=null;
+function integrationReportV21(data){
+ const results=[];
+ const add=(group,test,ok,detail='')=>results.push({group,test,ok:!!ok,detail:String(detail)});
+ const keys=['patients','appointments','notes','assessments','reports','payments','followups','log','tasks','referrals','agreements','sessions'];
+ for(const k of keys)add('Colecciones','Colección '+k,Array.isArray(data[k]),Array.isArray(data[k])?data[k].length+' registros':'No es arreglo');
+ const patients=Array.isArray(data.patients)?data.patients:[];
+ const patientIds=new Set(patients.map(p=>p.id));
+ for(const k of keys.filter(k=>!['patients','log','agreements'].includes(k))){
+  const records=Array.isArray(data[k])?data[k]:[];
+  const missing=records.filter(x=>x&&x.patientId!=null&&!patientIds.has(x.patientId));
+  add('Relaciones',k+' → Pacientes',missing.length===0,missing.length?missing.length+' referencia(s) huérfana(s)':'Sin referencias huérfanas');
+ }
+ const appointments=Array.isArray(data.appointments)?data.appointments:[];
+ const apptIds=new Set(appointments.map(x=>x.id));
+ for(const k of ['notes','sessions']){
+  const arr=Array.isArray(data[k])?data[k]:[];
+  const invalid=arr.filter(x=>x?.appointmentId&&!apptIds.has(x.appointmentId));
+  add('Relaciones',k+' → Agenda',invalid.length===0,invalid.length+' cita(s) no encontradas');
+ }
+ const payments=Array.isArray(data.payments)?data.payments:[];
+ const invalidPayments=payments.filter(p=>{const a=Number(p.amount),b=Number(p.paid);return !Number.isFinite(a)||!Number.isFinite(b)||a<0||b<0||b>a});
+ add('Negocio','Abonos dentro del valor',invalidPayments.length===0,invalidPayments.length+' pagos inconsistentes');
+ const expected=['Pacientes','Agenda','Expedientes','Evaluaciones','Reportes clínicos','Pagos','Seguimiento'];
+ const floorRooms=floors.flatMap(f=>f.rooms.map(r=>r[0]));
+ for(const [i,name] of expected.entries()){
+  add('Navegación','Paso '+(i+1)+' → '+name,guide[i]?.[0]===name&&floorRooms.includes(name),guide[i]?.[0]===name?'Ruta definida':'Ruta ausente o reordenada');
+ }
+ const map=[['Pacientes','patients'],['Agenda','appointments'],['Expedientes','notes'],['Evaluaciones','assessments'],['Reportes clínicos','reports'],['Seguimiento','followups'],['Pagos','payments'],['Bitácora','log'],['Convenios Institucionales','agreements']];
+ for(const [room,key] of map)add('Módulos',room+' → '+key,floorRooms.includes(room)&&Array.isArray(data[key]),floorRooms.includes(room)?'Habitación y colección presentes':'Falta habitación o colección');
+ try{validateScenarioV16(data);add('Integridad','Validador de escenario',true,'Estructura admitida por la importación')}catch(e){add('Integridad','Validador de escenario',false,e.message)}
+ add('Alcance','IA clínica conectada',true,'No implementada; demostración sin proveedor externo');
+ add('Alcance','Autenticación real',true,'No implementada; roles solo visuales');
+ return {generatedAt:new Date().toISOString(),version:'index21',summary:{total:results.length,passed:results.filter(x=>x.ok).length,failed:results.filter(x=>!x.ok).length},results};
+}
+function runIntegrationV21(){
+ const target=document.getElementById('integrationResultV21');if(!target)return;
+ integrationLastV21=integrationReportV21(db);
+ const r=integrationLastV21;
+ target.innerHTML=`<p><strong>${r.summary.passed}/${r.summary.total} controles satisfactorios</strong> · ${r.summary.failed} observaciones. Las comprobaciones son estructurales y no destructivas.</p><div style="max-height:330px;overflow:auto"><table class="table"><thead><tr><th>Área</th><th>Control</th><th>Estado</th><th>Detalle</th></tr></thead><tbody>${r.results.map(x=>`<tr><td>${safe(x.group)}</td><td>${safe(x.test)}</td><td>${x.ok?'✓':'⚠'}</td><td>${safe(x.detail)}</td></tr>`).join('')}</tbody></table></div><p class="muted">No verifica guardados desde formularios, permisos de servidor ni equivalencia completa con index2.</p>`;
+}
+function exportIntegrationV21(){
+ if(!integrationLastV21)integrationLastV21=integrationReportV21(db);
+ const blob=new Blob([JSON.stringify(integrationLastV21,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='auditoria-integracion-index21.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
+
+// Sprint 26 · Auditoría de equivalencia entre código fuente de index2 e index29.
+const finalEquivalenceV30=[{"area": "Pacientes", "legacy": "patients", "modern": "patientRoom", "oldFound": true, "newFound": true, "comment": "Probado en recorrido sintético; falta recarga publicada"}, {"area": "Agenda", "legacy": "agenda", "modern": "agendaRoom", "oldFound": true, "newFound": true, "comment": "Probado en recorrido sintético; falta recarga publicada"}, {"area": "Expedientes", "legacy": "clinical", "modern": "clinicalRoom", "oldFound": true, "newFound": true, "comment": "Probado en recorrido sintético"}, {"area": "Evaluaciones", "legacy": "evaluations", "modern": "evaluationsRoomV7", "oldFound": true, "newFound": true, "comment": "Probado en recorrido sintético"}, {"area": "Reportes clínicos", "legacy": "reports", "modern": "reportsRoomV7", "oldFound": true, "newFound": true, "comment": "Probado en recorrido sintético"}, {"area": "Pagos", "legacy": "payments", "modern": "paymentsRoomV8", "oldFound": true, "newFound": true, "comment": "Probado en recorrido sintético"}, {"area": "Seguimiento", "legacy": "followup", "modern": "followupRoomV8", "oldFound": true, "newFound": true, "comment": "Probado en recorrido sintético"}, {"area": "Convenios Institucionales", "legacy": "agreements", "modern": "agreementsRoomV9", "oldFound": true, "newFound": true, "comment": "Presencia y manejadores; revisar equivalencia de campos"}, {"area": "Recorrido guiado", "legacy": "guide", "modern": "renderGuide", "oldFound": true, "newFound": true, "comment": "Presencia; falta comparación paso a paso"}, {"area": "Laboratorio", "legacy": "lab", "modern": "renderLab", "oldFound": true, "newFound": true, "comment": "Presencia; importación heredada requiere prueba con archivo real"}, {"area": "Roles simulados", "legacy": "setRole", "modern": "permitted", "oldFound": true, "newFound": true, "comment": "No equivale a autenticación"}, {"area": "Exportación JSON", "legacy": "exportDemo", "modern": "exportDemoV10", "oldFound": true, "newFound": false, "comment": "Revisar estructura y compatibilidad"}, {"area": "Importación JSON", "legacy": "importDemo", "modern": "importDemoV10", "oldFound": true, "newFound": false, "comment": "Revisar estructura y compatibilidad"}, {"area": "Restaurar escenario", "legacy": "resetDemo", "modern": "seed", "oldFound": true, "newFound": true, "comment": "Revisar confirmación y datos restaurados"}];
+// Sprint 32 · Tablero de cierre: estados conservadores basados en evidencia disponible.
+const closureChecksV36=[
+ {area:'Pacientes',status:'Parcial',evidence:'Recorrido de formulario ficticio en Chromium',next:'Repetir desde origen HTTPS y verificar recarga'},
+ {area:'Agenda',status:'Parcial',evidence:'Creación de cita y controles de colisión sintéticos',next:'Probar colisión desde formulario visible'},
+ {area:'Expedientes',status:'Parcial',evidence:'Sesión vinculada a paciente en recorrido ficticio',next:'Comprobar edición y permisos desde interfaz'},
+ {area:'Evaluaciones',status:'Parcial',evidence:'Registro ficticio en recorrido visible',next:'Contrastar campos y reglas del original'},
+ {area:'Reportes clínicos',status:'Parcial',evidence:'Creación y edición mediante pruebas sintéticas',next:'Verificar impresión y contenido'},
+ {area:'Pagos',status:'Parcial',evidence:'Abono parcial y rechazo de importe inválido en pruebas',next:'Revisar saldos tras recarga'},
+ {area:'Seguimiento',status:'Parcial',evidence:'Creación y cambio de estado en pruebas sintéticas',next:'Contrastar tareas originales y seguimientos'},
+ {area:'Convenios',status:'Parcial',evidence:'Pruebas de manejadores de creación y edición',next:'Comparar campos y restricciones'},
+ {area:'Intercambio JSON actual',status:'Parcial',evidence:'Vista previa, cancelación y confirmación en Chromium simulado',next:'Probar archivos exportados por usuarios'},
+ {area:'Compatibilidad index2',status:'Parcial',evidence:'Adaptador probado con datos iniciales del código original',next:'Importar archivo exportado por index2'},
+ {area:'Persistencia publicada',status:'Pendiente',evidence:'Prueba HTTP bloqueada por entorno de ejecución',next:'Publicar en HTTPS, guardar datos ficticios y recargar'},
+ {area:'Fidelidad visual y móvil',status:'Parcial',evidence:'Inspecciones de estructura y desbordamiento a 1440 y 390 px',next:'Revisar imágenes, tipografía, interacción y accesibilidad'},
+ {area:'Seguridad de datos',status:'Fuera de alcance',evidence:'Perfiles de demostración sin autenticación real',next:'No introducir datos clínicos reales'}
+];
+// Sprint 33 · Archivo legado reproducible y contraste bidireccional en memoria.
+let closureEvidenceV37=null;
+function downloadLegacyFixtureV37(){
+ const blob=new Blob([JSON.stringify(originalSeedFixtureV32,null,2)],{type:'application/json'});
+ const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;
+ a.download='serenamente-index2-escenario-original-ficticio.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function runCrossFormatV37(){
+ const before=JSON.stringify(db),checks=[];
+ const check=(name,fn)=>{try{fn();checks.push({name,ok:true})}catch(e){checks.push({name,ok:false,detail:e.message})}};
+ let candidate,wire,parsed;
+ check('Validar formato original index2',()=>legacyValidateV15(originalSeedFixtureV32));
+ check('Adaptar formato original',()=>{candidate=legacyAdaptV15(JSON.parse(JSON.stringify(originalSeedFixtureV32)));validateScenarioV16(candidate)});
+ check('Exportar como formato actual',()=>{wire=JSON.stringify({format:'serenamente-pmv-1',data:candidate});parsed=JSON.parse(wire);if(parsed.format!=='serenamente-pmv-1')throw Error('Formato no reconocido')});
+ check('Validar exportación actual',()=>validateScenarioV16(parsed.data));
+ check('Conservar identificadores de pacientes',()=>{if(originalSeedFixtureV32.patients.some(p=>!parsed.data.patients.some(q=>q.id===p.id)))throw Error('Identificador perdido')});
+ check('Conservar citas y referencias',()=>{if(originalSeedFixtureV32.appointments.some(a=>!parsed.data.appointments.some(b=>b.id===a.id&&b.patientId===a.patientId)))throw Error('Cita o vínculo perdido')});
+ check('Conservar sesiones y notas derivadas',()=>{if(originalSeedFixtureV32.sessions.some(x=>!parsed.data.sessions.some(y=>y.id===x.id)||!parsed.data.notes.some(n=>n.id==='NOT-'+x.id)))throw Error('Sesión sin nota')});
+ check('Conservar evaluaciones, informes y pagos',()=>{for(const [oldKey,newKey] of [['evaluations','assessments'],['reports','reports'],['payments','payments']])if(originalSeedFixtureV32[oldKey].some(x=>!parsed.data[newKey].some(y=>y.id===x.id&&y.patientId===x.patientId)))throw Error('Registro perdido: '+oldKey)});
+ check('No alterar escenario activo',()=>{if(JSON.stringify(db)!==before)throw Error('Datos modificados')});
+ closureEvidenceV37={version:'index37',generatedAt:new Date().toISOString(),scope:'Prueba en memoria con seed original index2; no es importación desde archivo externo ni recarga publicada',checks,passed:checks.filter(x=>x.ok).length,total:checks.length};
+ const host=document.getElementById('crossFormatResultV37');
+ if(host)host.innerHTML=`<p><strong>${closureEvidenceV37.passed}/${closureEvidenceV37.total} comprobaciones satisfactorias.</strong> Prueba en memoria.</p><div class="table-wrap"><table class="data-table"><thead><tr><th>Control</th><th>Estado</th><th>Detalle</th></tr></thead><tbody>${checks.map(x=>`<tr><td>${safe(x.name)}</td><td>${x.ok?'Correcto':'Fallido'}</td><td>${safe(x.detail||'')}</td></tr>`).join('')}</tbody></table></div>`;
+ return closureEvidenceV37;
+}
+function exportCrossFormatV37(){if(!closureEvidenceV37){toast('Ejecuta primero el contraste');return}const b=new Blob([JSON.stringify(closureEvidenceV37,null,2)],{type:'application/json'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='evidencia-sprint33.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+function renderCrossFormatV37(){return `<div class="work-card full"><h3>Sprint 33 · Archivo index2 y contraste cruzado</h3><p>Descarga un JSON ficticio generado con los datos iniciales extraídos del código original. Puedes seleccionarlo en «Compatibilidad con index2» para revisar la vista previa, cancelar o confirmar. <strong>Confirmar reemplaza el escenario actual:</strong> respáldalo antes. El contraste automático es no destructivo y solo usa memoria.</p><div class="action-row"><button class="small-btn" type="button" data-action="legacy-fixture-v37">Descargar JSON ficticio index2</button><button class="small-btn" type="button" data-action="cross-format-v37">Ejecutar contraste cruzado</button><button class="small-btn" type="button" data-action="cross-format-export-v37">Exportar evidencia</button></div><div id="crossFormatResultV37" role="status" aria-live="polite">Pendiente de ejecutar.</div></div>`}
+
+function renderClosureV36(){
+ const totals={};closureChecksV36.forEach(x=>totals[x.status]=(totals[x.status]||0)+1);
+ const rows=closureChecksV36.map(x=>`<tr><td>${safe(x.area)}</td><td><strong>${safe(x.status)}</strong></td><td>${safe(x.evidence)}</td><td>${safe(x.next)}</td></tr>`).join('');
+ return `<div class="work-card full"><h3>Sprint 32 · Tablero de cierre de EL TRASTEO</h3><p><strong>${closureChecksV36.length} frentes evaluados</strong> · ${totals.Parcial||0} parciales · ${totals.Pendiente||0} pendientes · ${totals['Fuera de alcance']||0} fuera de alcance. <strong>Ningún frente está certificado como equivalencia total.</strong></p><p>Los estados representan el alcance de las pruebas documentadas, no un porcentaje de calidad o una certificación clínica. El diagnóstico del navegador se encuentra en la tarjeta del Sprint 31.</p><div class="table-wrap"><table class="data-table"><thead><tr><th>Frente</th><th>Estado</th><th>Evidencia disponible</th><th>Acción para cerrar</th></tr></thead><tbody>${rows}</tbody></table></div><button type="button" class="small-btn" data-action="closure-export-v36">Exportar tablero JSON</button></div>`;
+}
+function exportClosureV36(){
+ const report={version:'index36',generatedAt:new Date().toISOString(),classification:'Evaluación de cierre de prototipo; no certificación funcional completa',checks:closureChecksV36};
+ const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='tablero_cierre_index36.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+function renderFinalEquivalenceV30(){
+ const rows=finalEquivalenceV30.map(x=>`<tr><td>${safe(x.area)}</td><td>${safe(x.legacy)}</td><td>${safe(x.modern)}</td><td>${x.oldFound&&x.newFound?'Presencia identificada':'Revisar implementación'}</td><td>${safe(x.comment)}</td></tr>`).join('');
+ return `<div class="work-card full"><h3>Sprint 26 · Auditoría final de equivalencia</h3><p>Comparación de inventario del código fuente original <code>index2(1).html</code> frente a <code>index29.html</code>. La presencia de una función no certifica equivalencia de comportamiento. Los resultados previos fueron pruebas parciales con datos ficticios.</p><div class="table-wrap"><table class="data-table"><thead><tr><th>Área</th><th>Origen</th><th>Destino</th><th>Inventario</th><th>Alcance / pendiente</th></tr></thead><tbody>${rows}</tbody></table></div><p><strong>Pendientes para cierre:</strong> persistencia HTTP con recarga real; importación/exportación cruzada; inspección de campos y validaciones por formulario; verificación de imágenes y accesibilidad; seguridad de acceso real (fuera del alcance del PMV).</p><button type="button" class="small-btn" data-action="export-equivalence-v30">Exportar auditoría JSON</button></div>`;
+}
+function exportFinalEquivalenceV30(){
+ const report={version:'index30',type:'inventario-de-equivalencia',source:'index2(1).html',target:'index29.html',items:finalEquivalenceV30,limits:['Comparación estática de presencia','No certifica equivalencia funcional','No se verificó recarga HTTP publicada','Roles simulados sin autenticación']};
+ const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='auditoria_equivalencia_index30.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
+
+// Sprint 28 · Prueba con datos iniciales extraídos y ejecutados desde el seed() original de index2.
+const originalSeedFixtureV32={"version":1,"patients":[{"id":"PAC-001","name":"Mariana Torres","age":29,"phone":"300 000 0001","email":"mariana@example.test","status":"Activo","reason":"Manejo del estrés","assigned":"Luz Carime","created":"2026-11-04"},{"id":"PAC-002","name":"Andrés Ríos","age":37,"phone":"300 000 0002","email":"andres@example.test","status":"Activo","reason":"Acompañamiento emocional","assigned":"Luz Carime","created":"2026-11-04"},{"id":"PAC-003","name":"Valentina Mora","age":16,"phone":"300 000 0003","email":"valentina@example.test","status":"Seguimiento","reason":"Orientación y bienestar","assigned":"Luz Carime","created":"2026-11-04"},{"id":"PAC-004","name":"Julián Peña","age":44,"phone":"300 000 0004","email":"julian@example.test","status":"Activo","reason":"Valoración interdisciplinaria","assigned":"Médico","created":"2026-11-04"}],"appointments":[{"id":"CIT-001","patientId":"PAC-001","date":"2026-11-04","time":"09:00","service":"Psicología individual","professional":"Luz Carime","mode":"Presencial","status":"Confirmada"},{"id":"CIT-002","patientId":"PAC-002","date":"2026-11-04","time":"11:00","service":"Seguimiento","professional":"Luz Carime","mode":"Videollamada","status":"Confirmada"},{"id":"CIT-003","patientId":"PAC-003","date":"2026-11-05","time":"15:00","service":"Orientación","professional":"Luz Carime","mode":"Presencial","status":"Solicitada"}],"sessions":[{"id":"SES-001","patientId":"PAC-001","date":"2026-10-28","professional":"Luz Carime","summary":"Sesión de ejemplo: exploración de objetivos y recursos personales.","plan":"Continuar seguimiento y ejercicios de reflexión.","episode":"EPI-001"}],"evaluations":[{"id":"EVA-001","patientId":"PAC-001","date":"2026-10-30","instrument":"Escala de bienestar (ficticia)","result":"Resultado demostrativo, sin validez diagnóstica.","status":"Borrador"}],"reports":[{"id":"INF-001","patientId":"PAC-001","date":"2026-11-04","type":"Informe de evolución","body":"DOCUMENTO FICTICIO. Resumen demostrativo para validar el flujo de generación y revisión.","status":"Borrador","author":"Luz Carime"}],"payments":[{"id":"PAG-001","patientId":"PAC-001","date":"2026-11-04","service":"Consulta individual","amount":120000,"paid":120000,"method":"Transferencia"},{"id":"PAG-002","patientId":"PAC-002","date":"2026-11-04","service":"Paquete de sesiones","amount":360000,"paid":120000,"method":"Nequi"}],"tasks":[{"id":"TAR-001","title":"Revisar informe de Mariana","owner":"Luz Carime","date":"2026-11-05","status":"Pendiente"},{"id":"TAR-002","title":"Confirmar cita de Valentina","owner":"Administrativo","date":"2026-11-04","status":"Pendiente"}],"settings":{"institution":"Serenamente","contact":"contacto@serenamente.center","theme":"sereno"},"audit":[]};
+let originalSeedAuditV32=null;
+function runOriginalSeedAuditV32(){
+ const snapshot=JSON.stringify(db),checks=[];
+ const verify=(name,fn)=>{try{checks.push({name,ok:!!fn()})}catch(e){checks.push({name,ok:false,error:String(e.message)})}};
+ let adapted;
+ verify('Validación del escenario original index2',()=>{legacyValidateV15(originalSeedFixtureV32);return true});
+ verify('Adaptación del escenario completo',()=>{adapted=legacyAdaptV15(originalSeedFixtureV32);validateScenarioV16(adapted);return true});
+ verify('Conservar todos los pacientes',()=>adapted.patients.length===originalSeedFixtureV32.patients.length);
+ verify('Conservar todas las citas',()=>adapted.appointments.length===originalSeedFixtureV32.appointments.length);
+ verify('Conservar todas las sesiones',()=>adapted.sessions.length===originalSeedFixtureV32.sessions.length&&adapted.notes.length===originalSeedFixtureV32.sessions.length);
+ verify('Conservar evaluaciones e informes',()=>adapted.assessments.length===originalSeedFixtureV32.evaluations.length&&adapted.reports.length===originalSeedFixtureV32.reports.length);
+ verify('Conservar pagos y tareas',()=>adapted.payments.length===originalSeedFixtureV32.payments.length&&adapted.tasks.length===originalSeedFixtureV32.tasks.length);
+ verify('Referencias de pacientes válidas',()=>['appointments','sessions','notes','assessments','reports','payments'].every(k=>adapted[k].every(r=>adapted.patients.some(p=>p.id===r.patientId))));
+ verify('Escenario activo intacto',()=>JSON.stringify(db)===snapshot);
+ originalSeedAuditV32={version:'index32',origin:'seed() ejecutado desde index2(1).html con fecha de prueba fija',passed:checks.filter(c=>c.ok).length,total:checks.length,checks,scope:'No es un JSON exportado por un usuario ni una prueba de importación por interfaz.'};
+ const host=document.getElementById('originalSeedResultV32');if(host)host.innerHTML=`<p><strong>${originalSeedAuditV32.passed}/${originalSeedAuditV32.total} verificaciones satisfactorias.</strong></p><div class="table-wrap"><table class="data-table"><thead><tr><th>Comprobación</th><th>Resultado</th></tr></thead><tbody>${checks.map(c=>`<tr><td>${safe(c.name)}</td><td>${c.ok?'Correcta':'Fallida'}</td></tr>`).join('')}</tbody></table></div>`;
+ return originalSeedAuditV32;
+}
+
+// Sprint 27: comprobación no destructiva de compatibilidad con index2.
+let legacyAuditV31=null;
+function runLegacyAuditV31(){
+ const original=JSON.stringify(db),results=[];
+ const test=(name,fn)=>{try{const detail=fn();results.push({name,ok:true,detail:String(detail||'Correcto')})}catch(e){results.push({name,ok:false,detail:e.message})}};
+ const fixture={version:1,patients:[{id:'PAC-991',name:'Persona ficticia',age:30,status:'Activo'}],appointments:[{id:'CIT-991',patientId:'PAC-991',date:'2032-01-02',time:'10:00',service:'Consulta',professional:'Profesional ficticio'}],sessions:[{id:'SES-991',patientId:'PAC-991',date:'2032-01-02',professional:'Profesional ficticio',summary:'Resumen de prueba',plan:'Plan de prueba',episode:'EPI-991'}],evaluations:[{id:'EVA-991',patientId:'PAC-991',date:'2032-01-02',instrument:'Escala ficticia',result:'Sin interpretación clínica'}],reports:[{id:'INF-991',patientId:'PAC-991',date:'2032-01-02',type:'Informe ficticio',body:'Documento de prueba'}],payments:[{id:'PAG-991',patientId:'PAC-991',amount:100,paid:40}],tasks:[{id:'TAR-991',title:'Tarea de prueba',status:'Pendiente'}],audit:[],settings:{institution:'Serenamente'}};
+ let adapted;
+ test('Validar estructura original index2',()=>{legacyValidateV15(fixture);return 'Esquema version 1 aceptado'});
+ test('Adaptar index2 al modelo nuevo',()=>{adapted=legacyAdaptV15(fixture);validateScenarioV16(adapted);return 'Colecciones adaptadas y válidas'});
+ test('Preservar identidad y referencias',()=>{if(!adapted||!['appointments','sessions','notes','assessments','reports','payments'].every(k=>adapted[k].some(x=>x.patientId==='PAC-991')))throw Error('Se perdió alguna referencia');return 'PAC-991 conservado en seis colecciones'});
+ test('Preservar contenido clínico ficticio',()=>{if(adapted.notes[0].summary!=='Resumen de prueba'||adapted.assessments[0].name!=='Escala ficticia'||adapted.reports[0].title!=='Informe ficticio')throw Error('Campos no preservados');return 'Resumen, instrumento y tipo conservados'});
+ test('Compatibilidad de exportación nueva',()=>{const payload=JSON.parse(JSON.stringify({format:'serenamente-pmv-1',data:adapted}));if(payload.format!=='serenamente-pmv-1'||!payload.data.patients.length)throw Error('Envoltura inválida');return 'Formato serenamente-pmv-1'});
+ test('Rechazar referencia inexistente',()=>{const broken=JSON.parse(JSON.stringify(fixture));broken.appointments[0].patientId='PAC-NO-EXISTE';let rejected=false;try{legacyValidateV15(broken)}catch(e){rejected=true}if(!rejected)throw Error('Referencia huérfana aceptada');return 'Archivo rechazado correctamente'});
+ test('Rechazar pago inválido',()=>{const broken=JSON.parse(JSON.stringify(fixture));broken.payments[0].paid=101;let rejected=false;try{legacyValidateV15(broken)}catch(e){rejected=true}if(!rejected)throw Error('Sobrepago aceptado');return 'Archivo rechazado correctamente'});
+ test('No modificar el escenario actual',()=>{if(JSON.stringify(db)!==original)throw Error('Datos alterados');return 'Base original intacta'});
+ legacyAuditV31={version:'index31',timestamp:new Date().toISOString(),passed:results.filter(x=>x.ok).length,total:results.length,results,scope:'Pruebas en memoria con muestra sintética del esquema original. No prueba un archivo exportado por un navegador index2.'};
+ const host=document.getElementById('legacyAuditResultV31');if(host)host.innerHTML=`<p><strong>${legacyAuditV31.passed}/${legacyAuditV31.total} comprobaciones satisfactorias.</strong></p><div class="table-wrap"><table class="data-table"><thead><tr><th>Prueba</th><th>Resultado</th><th>Detalle</th></tr></thead><tbody>${results.map(r=>`<tr><td>${safe(r.name)}</td><td>${r.ok?'Correcta':'Fallida'}</td><td>${safe(r.detail)}</td></tr>`).join('')}</tbody></table></div>`;
+ return legacyAuditV31;
+}
+function exportLegacyAuditV31(){if(!legacyAuditV31){toast('Ejecuta primero la auditoría');return}const blob=new Blob([JSON.stringify(legacyAuditV31,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='auditoria-compatibilidad-index31.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+
+// Sprint 37 · Entrega final: instrucciones reproducibles y estado de aceptación.
+function renderDeliveryV41(){
+ const v=closureVerdictV40();
+ const steps=[
+  ['Preparar archivos','Publica index41.html como index.html en la raíz del repositorio y conserva las rutas relativas de imágenes.'],
+  ['Publicar','Activa GitHub Pages desde la rama y carpeta correctas; espera a que la URL HTTPS cargue.'],
+  ['Comprobar diseño','Abre el sitio en escritorio y móvil; revisa imágenes, navegación, pisos y formularios.'],
+  ['Probar persistencia','Con datos ficticios, ejecuta Laboratorio → Probar persistencia en este navegador (recarga).'],
+  ['Probar recorrido','Crea paciente, cita, sesión, evaluación, informe, pago y seguimiento; comprueba sus relaciones.'],
+  ['Probar importación','Descarga un respaldo, importa un JSON ficticio index2, cancela y repite confirmando.'],
+  ['Documentar resultados','Completa las doce pruebas del Sprint 35 con URL, fecha y observación no sensible.'],
+  ['Emitir dictamen','Revisa el Sprint 36 y exporta el acta y el dictamen JSON.']
+ ];
+ return `<div class="work-card full"><h3>Sprint 37 · Paquete de entrega y publicación</h3><p><strong>Dictamen actual:</strong> ${safe(v.verdict)}. Este paquete es un prototipo de demostración, no un sistema clínico listo para producción.</p><ol>${steps.map(([name,detail])=>`<li><strong>${safe(name)}:</strong> ${safe(detail)}</li>`).join('')}</ol><p><strong>Precauciones:</strong> solo datos ficticios; los perfiles son simulados; el almacenamiento local del navegador no constituye una base de datos clínica segura. No publiques información de pacientes reales.</p><p>El dictamen depende de la evidencia consignada en el protocolo; si falta alguna prueba, el cierre permanece pendiente.</p><button type="button" class="small-btn" data-action="delivery-export-v41">Exportar manifiesto de entrega JSON</button></div>`;
+}
+function exportDeliveryV41(){
+ const verdict=closureVerdictV40();
+ const payload={version:'index41',project:'EL TRASTEO — Serenamente',createdAt:new Date().toISOString(),deployment:'GitHub Pages (pendiente de verificación externa)',entry:'index.html (renombrar index41.html al publicar)',scope:'Prototipo con datos ficticios',security:'Roles demostrativos; no apto para datos clínicos reales',acceptance:verdict};
+ const blob=new Blob([JSON.stringify(payload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='manifiesto-entrega-index41.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
+// Sprint 36 · Dictamen conservador, basado exclusivamente en el acta manual.
+function closureVerdictV40(){
+ const summary=acceptanceSummaryV39();
+ const total=acceptanceCasesV39.length;
+ const missing=acceptanceCasesV39.filter(x=>(acceptanceV39[x.id]?.status||'Pendiente')!=='Superada');
+ const evidenceMissing=acceptanceCasesV39.filter(x=>acceptanceV39[x.id]?.status==='Superada'&&!String(acceptanceV39[x.id]?.note||'').trim());
+ let verdict='Pendiente de correcciones o verificación';
+ if(summary.passed===total&&evidenceMissing.length===0)verdict='Aprobado (según acta manual)';
+ else if(summary.failed===0&&summary.pending===0&&summary.blocked===0&&summary.passed===total&&evidenceMissing.length)verdict='Aprobado con observaciones (evidencia incompleta)';
+ else if(summary.failed===0&&summary.pending===0&&summary.blocked===0&&summary.passed>=total-1)verdict='Aprobado con observaciones';
+ return {verdict,summary,total,missing:missing.map(x=>({id:x.id,area:x.area,status:acceptanceV39[x.id]?.status||'Pendiente'})),evidenceMissing:evidenceMissing.map(x=>x.id),scope:'Evaluación de resultados declarados por la persona que realiza las pruebas; no es certificación automática ni aval de seguridad clínica'};
+}
+function renderClosureVerdictV40(){
+ const v=closureVerdictV40();
+ return `<div class="work-card full"><h3>Sprint 36 · Dictamen de cierre de EL TRASTEO</h3><p>El dictamen se calcula a partir del protocolo manual del Sprint 35. <strong>No se marca aprobado mientras existan pruebas pendientes, fallidas o bloqueadas.</strong> Los resultados son declaraciones de prueba, no una auditoría de seguridad.</p><p id="closureVerdictV40"><strong>${safe(v.verdict)}</strong> · ${v.summary.passed}/${v.total} superadas · ${v.evidenceMissing.length} sin nota de evidencia</p><div class="table-wrap"><table class="data-table"><thead><tr><th>Prueba</th><th>Estado</th><th>Observación</th></tr></thead><tbody>${acceptanceCasesV39.map(x=>{const r=acceptanceV39[x.id]||{};return `<tr><td>${safe(x.id)} · ${safe(x.area)}</td><td>${safe(r.status||'Pendiente')}</td><td>${safe(r.note||'Sin evidencia consignada')}</td></tr>`}).join('')}</tbody></table></div><div class="action-row"><button type="button" class="small-btn" data-action="closure-export-v40">Exportar dictamen JSON</button><button type="button" class="small-btn" data-action="closure-print-v40">Imprimir dictamen</button></div><p class="muted">Alcance: prototipo con datos ficticios y roles simulados; no apto para datos clínicos reales sin controles de seguridad y privacidad apropiados.</p></div>`;
+}
+function refreshClosureVerdictV40(){const host=document.getElementById('closureVerdictV40');if(host){const v=closureVerdictV40();host.textContent=`${v.verdict} · ${v.summary.passed}/${v.total} superadas · ${v.evidenceMissing.length} sin nota de evidencia`}}
+function exportClosureVerdictV40(){
+ const report={version:'index40',kind:'dictamen-manual-de-cierre',generatedAt:new Date().toISOString(),origin:location.origin,...closureVerdictV40(),tests:acceptanceCasesV39.map(x=>({...x,status:acceptanceV39[x.id]?.status||'Pendiente',note:acceptanceV39[x.id]?.note||''}))};
+ const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='dictamen_cierre_index40.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+}
+
+// Sprint 35 · Protocolo de aceptación para ejecución en origen HTTPS publicado.
+const acceptanceCasesV39=[
+ {id:'P01',area:'Origen publicado',title:'Abrir la versión HTTPS',instruction:'Publicar index39.html con su carpeta assets; abrir la URL HTTPS y comprobar que no hay errores de inicio.'},
+ {id:'P02',area:'Persistencia',title:'Recarga real',instruction:'En Laboratorio, ejecutar «Probar persistencia con recarga» y comprobar las cuatro verificaciones al volver.'},
+ {id:'P03',area:'Datos',title:'Paciente ficticio',instruction:'Crear un paciente ficticio desde Pacientes; recargar y comprobar que mantiene el mismo ID.'},
+ {id:'P04',area:'Agenda',title:'Cita vinculada',instruction:'Crear una cita para ese paciente, recargar y comprobar paciente, fecha, hora y profesional.'},
+ {id:'P05',area:'Expedientes',title:'Sesión vinculada',instruction:'Registrar una sesión ficticia y comprobar su asociación al mismo paciente.'},
+ {id:'P06',area:'Evaluaciones e informes',title:'Documentos asociados',instruction:'Crear evaluación e informe ficticios y comprobar que conservan el paciente al recargar.'},
+ {id:'P07',area:'Pagos y seguimiento',title:'Saldos y tareas',instruction:'Registrar abono parcial y seguimiento; comprobar saldo, estado y relaciones tras recarga.'},
+ {id:'P08',area:'Intercambio JSON',title:'Respaldo e importación',instruction:'Exportar respaldo, probar vista previa, cancelar sin cambios y confirmar únicamente con datos ficticios.'},
+ {id:'P09',area:'Compatibilidad index2',title:'Importación heredada',instruction:'Descargar muestra index2 del Sprint 33, previsualizarla y verificar sus relaciones antes de confirmar.'},
+ {id:'P10',area:'Permisos',title:'Perfiles simulados',instruction:'Cambiar entre perfiles y comprobar que las habitaciones y controles corresponden a la matriz de permisos.'},
+ {id:'P11',area:'Diseño',title:'Escritorio y móvil',instruction:'Revisar a 1440 px y 390 px, incluyendo imágenes, navegación, tablas y formularios.'},
+ {id:'P12',area:'Seguridad',title:'Límite de demostración',instruction:'Confirmar que no se usa información clínica real y que los perfiles son simulados, sin autenticación real.'}
+];
+const ACCEPTANCE_KEY_V39='serenamente_acceptance_index39_v1';
+let acceptanceV39={};
+function acceptanceLoadV39(){try{const value=JSON.parse(localStorage.getItem(ACCEPTANCE_KEY_V39)||'{}');if(value&&typeof value==='object'&&!Array.isArray(value))acceptanceV39=value}catch(e){acceptanceV39={}}}
+acceptanceLoadV39();
+function acceptanceSummaryV39(){const states=acceptanceCasesV39.map(x=>acceptanceV39[x.id]?.status||'Pendiente');return {passed:states.filter(x=>x==='Superada').length,failed:states.filter(x=>x==='Fallida').length,pending:states.filter(x=>x==='Pendiente').length,blocked:states.filter(x=>x==='Bloqueada').length}}
+function renderAcceptanceV39(){const sum=acceptanceSummaryV39();return `<div class="work-card full"><h3>Sprint 35 · Protocolo de aceptación en GitHub Pages</h3><p>Ejecuta estas pruebas en la versión publicada por HTTPS, usando <strong>solo datos ficticios</strong>. Marca el resultado observado y agrega una nota de evidencia. Los resultados se guardan en este navegador y <strong>no equivalen a una certificación automática</strong>.</p><p id="acceptanceSummaryV39"><strong>${sum.passed}/${acceptanceCasesV39.length} superadas</strong> · ${sum.failed} fallidas · ${sum.blocked} bloqueadas · ${sum.pending} pendientes</p><div class="table-wrap"><table class="data-table"><thead><tr><th>ID</th><th>Área y comprobación</th><th>Resultado</th><th>Observaciones</th></tr></thead><tbody>${acceptanceCasesV39.map(x=>`<tr><td>${safe(x.id)}</td><td><strong>${safe(x.area)} · ${safe(x.title)}</strong><br><small>${safe(x.instruction)}</small></td><td><select aria-label="Estado ${safe(x.id)}" data-accept-status-v39="${safe(x.id)}">${['Pendiente','Superada','Fallida','Bloqueada'].map(v=>`<option ${v===(acceptanceV39[x.id]?.status||'Pendiente')?'selected':''}>${v}</option>`).join('')}</select></td><td><textarea rows="2" aria-label="Observaciones ${safe(x.id)}" data-accept-note-v39="${safe(x.id)}" placeholder="URL, fecha, error o evidencia">${safe(acceptanceV39[x.id]?.note||'')}</textarea></td></tr>`).join('')}</tbody></table></div><div class="action-row"><button type="button" class="small-btn" data-action="accept-export-v39">Exportar acta JSON</button><button type="button" class="small-btn" data-action="accept-clear-v39">Reiniciar acta</button></div><p class="muted">Una prueba bloqueada no se considera superada. No guardes nombres, diagnósticos ni información sensible en las observaciones.</p></div>`}
+function acceptanceSaveV39(){try{localStorage.setItem(ACCEPTANCE_KEY_V39,JSON.stringify(acceptanceV39))}catch(e){toast('No se pudo guardar el acta en este navegador')}refreshClosureVerdictV40();const el=document.getElementById('acceptanceSummaryV39');if(el){const sum=acceptanceSummaryV39();el.textContent=`${sum.passed}/${acceptanceCasesV39.length} superadas · ${sum.failed} fallidas · ${sum.blocked} bloqueadas · ${sum.pending} pendientes`}}
+function acceptanceExportV39(){const report={version:'index39',kind:'protocolo-de-aceptacion-manual',generatedAt:new Date().toISOString(),origin:location.origin,results:acceptanceCasesV39.map(x=>({...x,status:acceptanceV39[x.id]?.status||'Pendiente',note:acceptanceV39[x.id]?.note||''}))};const blob=new Blob([JSON.stringify(report,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='acta_aceptacion_index39.json';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+
+function renderLab(){return `<div class="work-grid">${renderDeliveryV41()}${renderClosureVerdictV40()}${renderAcceptanceV39()}<div class="work-card full"><h3>Sprint 34 · Prueba de importación index2 desde selector</h3><p>Recorrido verificable: descarga el JSON ficticio index2 (Sprint 33), selecciónalo en el campo «Archivo original index2», comprueba la vista previa y pulsa «Confirmar sustitución por escenario index2». El diálogo de confirmación permite cancelar sin modificar los datos. <strong>Haz un respaldo antes de confirmar:</strong> la importación sustituye los registros del escenario local.</p><p>La importación no requiere datos clínicos reales. Las pruebas automatizadas de este sprint se ejecutan en un navegador aislado y no afectan a los datos de este navegador.</p></div>${renderCrossFormatV37()}${renderClosureV36()}<div class="work-card full"><h3>Sprint 31 · Diagnóstico de persistencia y cierre</h3><p>Comprueba el almacenamiento del origen actual y prepara una prueba de recarga sin datos clínicos reales. <strong>Para certificar persistencia publicada, abre esta página desde su URL HTTPS y ejecuta «Probar persistencia en este navegador (recarga)».</strong></p><button class="small-btn" type="button" data-action="environment-v35">Inspeccionar entorno actual</button> <button class="small-btn" type="button" data-action="persistence-v17">Probar persistencia con recarga</button><div id="environmentResultV35" role="status" aria-live="polite">Pendiente de inspección.</div><p class="muted">Una inspección satisfactoria no sustituye la recarga real. No se implementa autenticación ni almacenamiento clínico seguro.</p></div><div class="work-card full"><h3>Sprint 30 · Validación de importación por interfaz</h3><p>Pruebas externas de archivo JSON: seleccionar, validar, cancelar y confirmar, incluyendo rechazo de referencias inválidas. La evidencia del navegador se entrega por separado. Para reproducir manualmente, usa el bloque «Importar escenario» más abajo. <strong>Usa exclusivamente datos ficticios.</strong></p><p><strong>Importante:</strong> cancelar no debe modificar el escenario; confirmar sí reemplaza los datos después de la autorización.</p></div><div class="work-card full"><h3>Sprint 29 · Intercambio JSON con confirmación</h3><p>Prueba el flujo completo desde esta interfaz con un archivo ficticio: previsualizar, comprobar la validación y confirmar o cancelar. El botón de auditoría no reemplaza datos. El flujo de importación actual también requiere confirmación antes de guardar.</p><button type="button" class="small-btn" data-action="exchange-audit-v33">Ejecutar auditoría de intercambio</button><div id="exchangeAuditResultV33" role="status" aria-live="polite">Pendiente de ejecutar.</div></div><div class="work-card full"><h3>Sprint 28 · Datos originales de index2</h3><p>Ejecuta nueve verificaciones con el escenario inicial obtenido directamente de la función <code>seed()</code> del archivo original index2. Se evalúa en memoria, sin reemplazar registros. No sustituye una importación de archivo externo.</p><button type="button" class="small-btn" data-action="original-seed-v32">Probar escenario original index2</button><div id="originalSeedResultV32" aria-live="polite">Pendiente de ejecutar.</div></div><div class="work-card full"><h3>Sprint 27 · Compatibilidad de index2</h3><p>Auditoría de adaptación index2 → modelo actual, referencias, campos, validación negativa y preservación del escenario. Utiliza una muestra sintética y no modifica los datos. La importación de un archivo original sigue disponible más abajo con vista previa y confirmación.</p><button type="button" class="small-btn" data-action="legacy-audit-v31">Ejecutar 8 comprobaciones</button> <button type="button" class="small-btn" data-action="legacy-audit-export-v31">Exportar evidencia JSON</button><div id="legacyAuditResultV31" aria-live="polite">Pendiente de ejecutar.</div></div>${renderFinalEquivalenceV30()}<div class="work-card full"><h3>Sprint 25 · Persistencia HTTP y revisión responsiva</h3><p>Esta versión incorpora un punto de control para contrastar la persistencia entre recargas y el comportamiento en escritorio y móvil desde un origen HTTP local. La ejecución automatizada se realiza fuera de la aplicación y sus resultados se documentan en <code>evidencia_sprint25.json</code>.</p><p><strong>Alcance:</strong> origen HTTP de pruebas local, no despliegue público. Los roles siguen siendo demostrativos y los datos deben ser ficticios.</p><button type="button" class="small-btn" data-action="persistence-v17">Probar persistencia en este navegador (recarga)</button><button type="button" class="small-btn" data-action="visual-audit-v20">Inspeccionar diseño en este tamaño de pantalla</button><div id="visualAuditResultV20" aria-live="polite"></div></div><div class="work-card full"><h3>Sprint 24 · Recorrido visible entre siete habitaciones</h3><p>Validación externa ejecutada con Chromium y formularios visibles sobre datos ficticios: Pacientes → Agenda → Expedientes → Evaluaciones → Reportes clínicos → Pagos → Seguimiento. Se verificó que las siete operaciones conservaron el mismo identificador de paciente. La reconstrucción utilizó almacenamiento simulado; no se verificó una recarga HTTP real ni un despliegue publicado.</p><p><strong>Resultado observado:</strong> 7/7 formularios y una reconstrucción de datos satisfactorios. Consulta el archivo complementario <code>evidencia_sprint24.json</code> para conocer el alcance y los resultados registrados. Esta tarjeta es informativa; no ejecuta una prueba nueva.</p></div><div class="work-card full"><h3>Sprint 23 · Inspección del navegador</h3><p>Verifica la presencia de habitaciones, formularios y el estado de la persistencia local. La inspección no modifica registros; para probar recarga utiliza también la herramienta del Sprint 13.</p><button class="small-btn" type="button" data-action="browser-audit-v27">Inspeccionar navegador y formularios</button><div id="browserAuditV27" aria-live="polite">Pendiente de ejecutar.</div></div><div class="work-card full"><h3>Sprint 22 · Ejecución y depuración de manejadores funcionales</h3><p>Ejecuta creación, edición, validaciones y relaciones entre habitaciones mediante los manejadores reales, con formularios sintéticos y una copia aislada de la base de datos. Añade una comprobación explícita de restauración del escenario activo. No guarda cambios ni sustituye una prueba completa en navegador.</p><button type="button" class="small-btn" data-action="handler-tests-v24">Ejecutar pruebas funcionales aisladas</button><div id="handlerTestsV24" aria-live="polite"><p class="muted">Pendiente de ejecutar.</p></div></div>${renderUiReviewV23()}<div class="work-card full"><h3>Sprint 18 · Recorrido integral de extremo a extremo</h3><p>Construye un caso ficticio completo sobre una copia de los datos: Paciente → Agenda → Expediente → Evaluación → Informe → Pago → Seguimiento. Verifica referencias e ida y vuelta JSON sin modificar el escenario activo. <strong>No sustituye las pruebas de formularios reales.</strong></p><button type="button" class="small-btn" data-action="end-to-end-v22">Ejecutar recorrido integral</button> <button type="button" class="small-btn" data-action="end-to-end-export-v22">Exportar resultados JSON</button><div id="endToEndResultV22" role="status" aria-live="polite"><p class="muted">Sin ejecutar.</p></div></div><div class="work-card full"><h3>Sprint 17 · Integración entre habitaciones</h3><p>Auditoría no destructiva: revisa relaciones entre registros, rutas del recorrido y correspondencia de los módulos con las colecciones. Las observaciones no prueban por sí solas el comportamiento de los formularios.</p><button type="button" class="small-btn" data-action="integration-v21">Ejecutar inspección integral</button> <button type="button" class="small-btn" data-action="integration-export-v21">Exportar resultado JSON</button><div id="integrationResultV21" role="status" aria-live="polite"><p class="muted">Sin ejecutar.</p></div></div><div class="work-card full"><h3>Sprint 16 · Fidelidad visual y navegación</h3><p>Compara el inventario de pisos y habitaciones del diseño original; inspecciona enlaces, recursos de imagen y desbordamiento en el tamaño de pantalla actual. Ejecuta también en móvil. No modifica datos.</p><button type="button" class="small-btn" data-action="visual-audit-v20">Inspeccionar edificio</button><div id="visualAuditResultV20" aria-live="polite"></div></div><div class="work-card full"><h3>Sprint 15 · Formularios y perfiles</h3><p>Auditoría no destructiva de la presencia de formularios en ocho habitaciones y cinco perfiles simulados. Detecta diferencias de visibilidad; no demuestra seguridad real ni ejecuta guardados.</p><button type="button" class="small-btn" data-action="form-role-audit-v19">Ejecutar 40 comprobaciones</button><div id="formRoleAuditResultV19" aria-live="polite"></div></div><div class="work-card full"><h3>Sprint 14 · Regresión de edición</h3><p>Prueba no destructiva de creación, edición, identificadores, relaciones, validación e intercambio JSON sobre una copia ficticia en memoria. No guarda cambios en los pacientes reales del navegador.</p><button type="button" class="small-btn" data-action="regression-v18">Ejecutar auditoría de edición</button><div id="regressionResultV18" aria-live="polite"></div></div><div class="work-card"><h3>Datos ficticios</h3><div class="stat">${db.patients.length}</div><p>Pacientes en este navegador</p></div><div class="work-card"><h3>Exportar escenario</h3><p>Descarga un JSON con datos exclusivamente ficticios.</p><button class="small-btn" data-action="export">↓ Exportar JSON</button></div><div class="work-card"><h3>Importar escenario</h3><p>Importa un JSON previamente exportado por este prototipo. Primero se valida y muestra una vista previa; no se modifica el escenario hasta confirmar.</p><label class="field">Seleccionar archivo JSON<input id="importFile" type="file" accept=".json,application/json"></label><div id="modernPreviewV33" role="status" aria-live="polite">Ningún archivo seleccionado.</div><div class="action-row"><button type="button" class="small-btn" data-action="export">Respaldar escenario actual</button><button type="button" class="small-btn" data-action="modern-commit-v33" id="modernCommitV33" disabled>Confirmar sustitución</button></div></div><div class="work-card full"><h3>Escenarios de prueba</h3><p>Selecciona un caso para recorrer el edificio. Todos los registros son ficticios.</p><div class="action-row"><button class="small-btn" data-scenario="initial">Atención individual</button><button class="small-btn" data-scenario="referral">Interconsulta interdisciplinaria</button><button class="small-btn" data-scenario="payment">Pago parcial y saldo</button></div></div><div class="work-card full"><h3>Restaurar datos de demostración</h3><p>Reemplaza las modificaciones locales por el escenario ficticio inicial.</p><button class="small-btn" data-action="reset">↺ Restaurar escenario inicial</button><button class="small-btn" data-action="lab-check-v10">✓ Comprobar integridad</button><button class="small-btn" data-action="audit-room-v14">▦ Matriz de equivalencia</button></div><div class="work-card full"><h3>Compatibilidad con index2 · Sprint 11</h3><p>Selecciona un archivo JSON exportado desde index2. Primero se analiza y presenta una vista previa; no se modificarán los datos actuales hasta confirmar expresamente la sustitución. Solo se admiten datos ficticios.</p><label class="field">Archivo original index2 (.json)<input id="legacyImportFileV15" type="file" accept=".json,application/json"></label><div id="legacyPreviewV15" role="status" aria-live="polite"><p class="muted">Ningún archivo seleccionado.</p></div><div class="action-row"><button type="button" class="small-btn" data-action="legacy-backup-v15">↓ Respaldar escenario actual</button><button type="button" class="small-btn" data-action="legacy-commit-v15" id="legacyCommitV15" disabled>Confirmar sustitución por escenario index2</button></div></div><div class="work-card full"><h3>Prueba de ida y vuelta · Sprint 12</h3><p>Exportar → interpretar → validar → comparar, todo en memoria y sin sobrescribir el escenario.</p><button type="button" class="small-btn" data-action="roundtrip-v16">Ejecutar cinco controles</button><div id="roundtripResultV16" role="status" aria-live="polite"></div></div><div class="work-card full"><h3>Persistencia entre recargas · Sprint 13</h3><p>Comprueba escritura, lectura y reconstrucción del escenario ficticio. No crea ni edita pacientes. Recargará esta página una vez.</p><button type="button" class="small-btn" data-action="persistence-v17">Ejecutar prueba con recarga</button><div id="persistenceResultV17" role="status" aria-live="polite">${persistenceResultV17()}</div></div>`}
+function renderGuide(){
+ const step=guide[guideStep];
+ if(!db.patients.some(p=>p.id===guidePatientId))guidePatientId=db.patients.find(p=>role!=='medico'||p.assigned==='Médico')?.id||'';
+ const patients=db.patients.filter(p=>role!=='medico'||p.assigned==='Médico');
+ const chooser=patients.length?`<label class="field" style="max-width:460px">Paciente de referencia (ficticio)<select id="guidePatientV10">${patients.map(p=>`<option value="${safe(p.id)}" ${p.id===guidePatientId?'selected':''}>${safe(p.name)} · ${safe(p.id)}</option>`).join('')}</select></label>`:'<p>No hay pacientes disponibles para este perfil.</p>';
+ return `<div class="work-card"><h3>Recorrido guiado · ${guideStep+1} de ${guide.length}</h3><p class="muted">Cada etapa abre una habitación real del prototipo; conserva el paciente seleccionado cuando es compatible.</p>${chooser}<div class="stepper">${guide.map((g,i)=>`<button class="${i===guideStep?'current':''}" data-step="${i}">${i+1}. ${safe(g[0])}</button>`).join('')}</div><div class="guide-box"><h3>${safe(step[0])}</h3><p>${safe(step[2])}</p><p><strong>Paciente de referencia:</strong> ${safe(patientName(guidePatientId))}</p><div class="action-row"><button class="cta" data-action="visit-step">Abrir habitación ${safe(step[0])} →</button>${guideStep>0?'<button class="small-btn" data-action="prev-step">← Anterior</button>':''}${guideStep<guide.length-1?'<button class="small-btn" data-action="next-step">Siguiente →</button>':''}</div></div></div>`;
+}
+function openGuideStepV10(){
+ const target=guide[guideStep];if(!can(target[0])){toast('El perfil simulado no tiene acceso a esta etapa');return}
+ if(guidePatientId&&db.patients.some(p=>p.id===guidePatientId)){
+  clinicalSelectedId=guidePatientId;
+  if(target[0]==='Pacientes'){patientViewingId=guidePatientId;patientEditingId=null}
+ }
+ openRoom(target[0],target[1]);
+}
+function labIntegrityV10(){
+ const issues=[],ids=new Set(),collections=['appointments','sessions','notes','assessments','reports','payments','followups','referrals'];
+ for(const p of db.patients){if(!p.id||ids.has(p.id))issues.push('Código de paciente duplicado o vacío');ids.add(p.id)}
+ for(const key of collections){if(!Array.isArray(db[key])){issues.push('Colección faltante: '+key);continue}for(const r of db[key])if(r.patientId&&!ids.has(r.patientId))issues.push(key+': referencia sin paciente ('+r.id+')')}
+ for(const r of db.payments||[])if(!Number.isFinite(Number(r.amount))||!Number.isFinite(Number(r.paid))||Number(r.paid)<0||Number(r.paid)>Number(r.amount))issues.push('Pago con valores inconsistentes ('+r.id+')');
+ return issues;
+}
+function labCheckRoomV10(){
+ const issues=labIntegrityV10();
+ return `<div class="work-card"><h3>Inspección de integridad · Sprint 6</h3><p>Comprobación local del escenario ficticio. No equivale a una auditoría de seguridad.</p><p><strong>Resultado:</strong> ${issues.length?'Se encontraron '+issues.length+' observaciones':'Sin inconsistencias detectadas por estas reglas'}</p>${issues.length?`<ul>${issues.slice(0,30).map(x=>`<li>${safe(x)}</li>`).join('')}</ul>`:'<p>✓ Referencias de pacientes y valores de pagos revisados.</p>'}<div class="action-row"><button class="small-btn" data-action="lab-check-v10">Volver a comprobar</button><button class="small-btn" data-action="lab-return-v10">Volver al Laboratorio</button></div></div>`;
+}
+function openRoom(name,floor){if(name==='Inspección de integridad'&&role!=='psicologa'&&role!=='administrativo'){toast('Herramienta disponible solo para perfiles de gestión simulados');return}if(name==='Agenda')appointmentEditingId=null;if(name!=='Inspección de integridad'&&!can(name)){toast('Perfil simulado sin acceso a esta habitación.');return}currentRoom=name;currentFloor=floor||'Edificio';document.getElementById('workspaceBody').innerHTML=renderRoom(name);showPage('workspace')}
 function closeRoom(){overlay.classList.remove('open');overlay.setAttribute('aria-hidden','true');document.body.style.overflow='';if(lastFocus&&typeof lastFocus.focus==='function')lastFocus.focus()}
-document.addEventListener('click',e=>{const go=e.target.closest('[data-go]');if(go){showPage(go.dataset.go);return}const room=e.target.closest('[data-room]');if(room){openRoom(room.dataset.room,room.dataset.floor||'Serenamente')}});
+function openLab(){openRoom('Laboratorio','Herramientas PMV')}
+function openGuide(){guideStep=0;openRoom('Recorrido guiado','Edificio Digital')}
+function nextId(arr,prefix){return prefix+'-'+String(arr.reduce((n,r)=>Math.max(n,Number(String(r.id||'').split('-').at(-1))||0),0)+1).padStart(3,'0')}
+function submitForm(form){const kind=form.dataset.form;const data=Object.fromEntries(new FormData(form));if(kind==='contact'){toast('Solicitud ficticia registrada únicamente como demostración; no se envió.');return}if(!can(currentRoom)){toast('Acción no permitida para este perfil');return}if(['tasks','referrals'].includes(kind)&&(!findPatient(data.patientId)||(role==='medico'&&findPatient(data.patientId).assigned!=='Médico'))){toast('Paciente no permitido');return}if(!['patients','appointments','notes','assessments','reports','payments','followups','tasks','referrals','agreements'].includes(kind))return;if(kind==='patients'&&(!data.name?.trim()||Number(data.age)<1||Number(data.age)>120)){toast('Revisa nombre y edad ficticios.');return}if(kind==='payments'&&(Number(data.amount)<0||Number(data.paid)<0||Number(data.paid)>Number(data.amount))){toast('Verifica los valores del pago simulado.');return}const prefixes={patients:'P',appointments:'C',notes:'H',assessments:'E',reports:'I',payments:'F',followups:'S',tasks:'T',referrals:'R',agreements:'V'};const record={...data,id:nextId(db[kind],prefixes[kind])};if(kind==='patients')record.age=Number(record.age);if(kind==='payments'){record.amount=Number(record.amount);record.paid=Number(record.paid)}if(kind==='reports'||kind==='agreements')record.status='Borrador';if(kind==='tasks')record.status='Pendiente';if(kind==='referrals')record.status='Solicitada';if(kind==='agreements')record.quota=Number(record.quota)||0;db[kind].push(record);audit('Creación ficticia en '+kind+' · '+record.id);persist('Registro ficticio guardado en este navegador.');document.getElementById('workspaceBody').innerHTML=renderRoom(currentRoom)}
+
+// Sprint 11: adaptación explícita y reversible mediante respaldo exportable; nunca lee index2 del almacenamiento automáticamente.
+let legacyCandidateV15=null;
+const legacyCollectionsV15=['patients','appointments','sessions','evaluations','reports','payments','tasks','audit'];
+function legacyValidateV15(x){
+ if(!x||typeof x!=='object'||Array.isArray(x)||x.version!==1||!x.settings||typeof x.settings!=='object')throw Error('No corresponde al esquema original index2 (version 1)');
+ for(const k of legacyCollectionsV15)if(!Array.isArray(x[k])||x[k].length>2000)throw Error('Colección original inválida: '+k);
+ const ids=new Set();
+ for(const p of x.patients){if(!p||typeof p.id!=='string'||!p.id||ids.has(p.id)||typeof p.name!=='string')throw Error('Código de paciente duplicado o inválido');ids.add(p.id)}
+ for(const k of ['appointments','sessions','evaluations','reports','payments'])for(const r of x[k]){
+  if(!r||typeof r.id!=='string'||!r.id||!ids.has(r.patientId))throw Error('Registro o referencia a paciente inválidos en '+k);
+ }
+ for(const k of ['tasks'])for(const r of x[k])if(!r||typeof r.id!=='string'||!r.id)throw Error('Tarea inválida');
+ for(const p of x.payments){const a=Number(p.amount),b=Number(p.paid);if(!Number.isFinite(a)||!Number.isFinite(b)||a<0||b<0||b>a)throw Error('Pago con valores inválidos')}
+}
+function legacyAdaptV15(src){
+ legacyValidateV15(src);
+ const candidate={patients:src.patients.map(x=>({...x})),appointments:src.appointments.map(x=>({...x})),
+ sessions:src.sessions.map(x=>({...x})),
+ notes:src.sessions.map(x=>({id:'NOT-'+x.id,patientId:x.patientId,date:x.date,professional:x.professional,summary:x.summary||'',plan:x.plan||'',episode:x.episode||''})),
+ assessments:src.evaluations.map(x=>({...x,name:x.instrument||''})),reports:src.reports.map(x=>({...x,title:x.type||''})),
+ payments:src.payments.map(x=>({...x})),
+ followups:[],referrals:[],agreements:[],
+ tasks:src.tasks.map(x=>({...x,task:x.title||x.task||''})),
+ log:src.audit.map(x=>({at:x.date||'',role:x.role||'—',action:[x.action,x.detail].filter(Boolean).join(' · ')}))};
+ return candidate;
+}
+async function legacyPreviewFileV15(file){
+ legacyCandidateV15=null;
+ const preview=document.getElementById('legacyPreviewV15');const commit=document.getElementById('legacyCommitV15');
+ if(commit)commit.disabled=true;
+ if(!file){if(preview)preview.innerHTML='<p class="muted">Ningún archivo seleccionado.</p>';return}
+ try{
+  if(file.size>2e6)throw Error('El archivo excede 2 MB');
+  const src=JSON.parse(await file.text());
+  const candidate=legacyAdaptV15(src);
+  legacyCandidateV15=candidate;
+  if(preview)preview.innerHTML=`<div class="notice"><strong>Vista previa: archivo index2 compatible.</strong><p>Pacientes: ${candidate.patients.length} · Citas: ${candidate.appointments.length} · Sesiones: ${candidate.sessions.length} · Evaluaciones: ${candidate.assessments.length} · Informes: ${candidate.reports.length} · Pagos: ${candidate.payments.length} · Tareas: ${candidate.tasks.length} · Bitácora: ${candidate.log.length}.</p><p>Se conservarán los identificadores originales (PAC, CIT, SES, EVA, INF, PAG). Las sesiones se representarán también como notas de expediente para compatibilidad visual. Seguimientos, remisiones y convenios quedarán vacíos porque no existen como colecciones equivalentes en index2. La configuración original no se importa porque este prototipo no dispone de un módulo de ajustes equivalente.</p><strong>Advertencia:</strong> confirmar reemplazará todo el escenario local actual. Descarga primero el respaldo.</div>`;
+  if(commit)commit.disabled=false;
+ }catch(err){if(preview)preview.innerHTML=`<p class="muted">Archivo rechazado: ${safe(err.message)}</p>`;toast('Archivo index2 no compatible')}
+}
+function legacyCommitV15(){
+ if(!legacyCandidateV15){toast('Primero selecciona un archivo compatible');return}
+ if(!['psicologa','administrativo'].includes(role)){toast('Acceso no permitido para este perfil simulado');return}
+ if(!confirm('¿Confirmas sustituir TODOS los datos ficticios actuales por los del archivo index2? Descarga primero un respaldo si deseas conservarlos.'))return;
+ const next=JSON.parse(JSON.stringify(legacyCandidateV15));
+ try{validateScenarioV16(next)}catch(err){toast('Escenario inválido: '+err.message);return}
+ const previous=db;
+ try{localStorage.setItem(STORAGE,JSON.stringify(next))}catch(err){toast('No se pudo guardar el escenario; no se modificaron los datos');return}
+ db=next;legacyCandidateV15=null;
+ patientViewingId=null;patientEditingId=null;appointmentEditingId=null;assessmentEditingId=null;reportEditingId=null;followupEditV8=null;paymentEditV8=null;agreementEditingV9=null;
+ audit('Importación confirmada desde index2');persist('Escenario index2 adaptado y guardado');
+ document.getElementById('workspaceBody').innerHTML=renderRoom('Laboratorio');
+}
+function exportJSON(){const blob=new Blob([JSON.stringify({format:'serenamente-pmv-1',data:db},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='serenamente-escenario-ficticio.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000)}
+async function importJSON(file){return modernPreviewFileV33(file)}
+document.addEventListener('click',e=>{if(e.target.closest('[data-action="delivery-export-v41"]')){exportDeliveryV41();return}if(e.target.closest('[data-action="closure-export-v40"]')){exportClosureVerdictV40();return}if(e.target.closest('[data-action="closure-print-v40"]')){window.print();return}if(e.target.closest('[data-action="accept-export-v39"]')){acceptanceExportV39();return}if(e.target.closest('[data-action="accept-clear-v39"]')){if(confirm('¿Reiniciar los resultados de aceptación guardados en este navegador?')){acceptanceV39={};acceptanceSaveV39();document.getElementById('workspaceBody').innerHTML=renderRoom('Laboratorio')}return}if(e.target.closest('[data-action="legacy-fixture-v37"]')){downloadLegacyFixtureV37();return}if(e.target.closest('[data-action="cross-format-v37"]')){runCrossFormatV37();return}if(e.target.closest('[data-action="cross-format-export-v37"]')){exportCrossFormatV37();return}if(e.target.closest('[data-action="closure-export-v36"]')){exportClosureV36();return}if(e.target.closest('[data-action="environment-v35"]')){inspectEnvironmentV35();return}if(e.target.closest('[data-action="exchange-audit-v33"]')){runExchangeAuditV33();return}if(e.target.closest('[data-action="modern-commit-v33"]')){modernCommitV33();return}if(e.target.closest('[data-action="original-seed-v32"]')){runOriginalSeedAuditV32();return}if(e.target.closest('[data-action="legacy-audit-v31"]')){runLegacyAuditV31();return}if(e.target.closest('[data-action="legacy-audit-export-v31"]')){exportLegacyAuditV31();return}if(e.target.closest('[data-action="export-equivalence-v30"]')){exportFinalEquivalenceV30();return}if(e.target.closest('[data-action="browser-audit-v27"]')){inspectBrowserV27();return}if(e.target.closest('[data-action="handler-tests-v24"]')){runHandlerTestsV24();return}if(e.target.closest('[data-action="ui-review-export-v23"]')){exportUiReviewV23();return}if(e.target.closest('[data-action="ui-review-reset-v23"]')){uiReviewV23={};document.getElementById('workspaceBody').innerHTML=renderRoom('Laboratorio');return}if(e.target.closest('[data-action="end-to-end-v22"]')){runEndToEndV22();return}if(e.target.closest('[data-action="end-to-end-export-v22"]')){exportEndToEndV22();return}if(e.target.closest('[data-action="integration-v21"]')){runIntegrationV21();return}if(e.target.closest('[data-action="integration-export-v21"]')){exportIntegrationV21();return}if(e.target.closest('[data-action="visual-audit-v20"]')){runVisualAuditV20();return}if(e.target.closest('[data-action="visual-audit-export-v20"]')){exportVisualAuditV20();return}
+if(e.target.closest('[data-action="form-role-audit-v19"]')){runFormRoleAuditV19();return} if(e.target.closest('[data-action="regression-v18"]')){runRegressionV18();return}
+if(e.target.closest('[data-action="persistence-v17"]')){persistenceStartV17();return}
+if(e.target.closest('[data-action="roundtrip-v16"]')){runRoundtripV16();return}
+if(e.target.closest('[data-action="legacy-backup-v15"]')){exportJSON();return}
+if(e.target.closest('[data-action="legacy-commit-v15"]')){legacyCommitV15();return}
+if(e.target.closest('[data-action="audit-room-v14"]')){openRoom('Auditoría de equivalencia','Inspección de migración');return}
+if(e.target.closest('[data-action="audit-csv-v14"]')){exportAuditCsvV14();return}
+
+const ag=e.target.closest('[data-agreement-edit-v9]');if(ag){if(!['psicologa','administrativo'].includes(role))return;agreementEditingV9=ag.dataset.agreementEditV9;document.getElementById('workspaceBody').innerHTML=renderRoom('Convenios Institucionales');return}
+if(e.target.closest('[data-agreement-cancel-v9]')){agreementEditingV9=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Convenios Institucionales');return}
+
+const fe=e.target.closest('[data-followup-edit-v8]');if(fe){if(!['psicologa','medico','administrativo'].includes(role))return;followupEditV8=fe.dataset.followupEditV8;document.getElementById('workspaceBody').innerHTML=renderRoom('Seguimiento');return}
+if(e.target.closest('[data-followup-cancel-v8]')){followupEditV8=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Seguimiento');return}
+const ft=e.target.closest('[data-followup-toggle-v8]');if(ft){toggleFollowupV8(ft.dataset.followupToggleV8);return}
+const pe=e.target.closest('[data-payment-edit-v8]');if(pe){if(!['psicologa','administrativo'].includes(role))return;paymentEditV8=pe.dataset.paymentEditV8;document.getElementById('workspaceBody').innerHTML=renderRoom('Pagos');return}
+if(e.target.closest('[data-payment-cancel-v8]')){paymentEditV8=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Pagos');return}
+const v=e.target.closest('[data-patient-view]');if(v){if(!can('Pacientes')||(role==='medico'&&findPatient(v.dataset.patientView)?.assigned!=='Médico'))return;patientViewingId=v.dataset.patientView;patientEditingId=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Pacientes');return}const ed=e.target.closest('[data-patient-edit]');if(ed){if(!['psicologa','administrativo'].includes(role))return;patientEditingId=ed.dataset.patientEdit;document.getElementById('workspaceBody').innerHTML=renderRoom('Pacientes');return}const ev=e.target.closest('[data-eval-edit-v7]');if(ev){if(!canWriteClinicalV7())return;assessmentEditingId=ev.dataset.evalEditV7;document.getElementById('workspaceBody').innerHTML=renderRoom('Evaluaciones');return}if(e.target.closest('[data-eval-cancel-v7]')){assessmentEditingId=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Evaluaciones');return}const rp=e.target.closest('[data-report-edit-v7]');if(rp){if(!canWriteClinicalV7())return;reportEditingId=rp.dataset.reportEditV7;document.getElementById('workspaceBody').innerHTML=renderRoom('Reportes clínicos');return}if(e.target.closest('[data-report-cancel-v7]')){reportEditingId=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Reportes clínicos');return}const pr=e.target.closest('[data-report-print-v7]');if(pr){printReportV7(pr.dataset.reportPrintV7);return}if(e.target.closest('[data-patient-close]')){patientViewingId=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Pacientes');return}if(e.target.closest('[data-patient-cancel]')){patientEditingId=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Pacientes');return}if(e.target.closest('[data-patient-clinical]')){if(patientViewingId)clinicalSelectedId=patientViewingId;openRoom('Expedientes','Piso 3');return}const ap=e.target.closest('[data-appointment-edit]');if(ap){if(role==='paciente'||!can('Agenda'))return;appointmentEditingId=ap.dataset.appointmentEdit;document.getElementById('workspaceBody').innerHTML=renderRoom('Agenda');return}if(e.target.closest('[data-appointment-cancel]')){appointmentEditingId=null;document.getElementById('workspaceBody').innerHTML=renderRoom('Agenda');return}const done=e.target.closest('[data-complete-task]');if(done){const t=db.tasks.find(x=>x.id===done.dataset.completeTask);if(t){t.status='Completada';audit('Tarea ficticia completada '+t.id);persist('Tarea completada');document.getElementById('workspaceBody').innerHTML=renderRoom(currentRoom)}return}const scenario=e.target.closest('[data-scenario]');if(scenario){const id=scenario.dataset.scenario;const map={initial:['Pacientes','Piso 3'],referral:['Remisiones','Piso 3'],payment:['Pagos','Piso 4']};const target=map[id];if(target){openRoom(...target);toast('Escenario ficticio: '+scenario.textContent)}return}const go=e.target.closest('[data-go]');if(go){showPage(go.dataset.go);return}const room=e.target.closest('[data-room]');if(room){openRoom(room.dataset.room,room.dataset.floor||'Serenamente');return}const step=e.target.closest('[data-step]');if(step){guideStep=Number(step.dataset.step);document.getElementById('workspaceBody').innerHTML=renderRoom('Recorrido guiado');return}const btn=e.target.closest('[data-action]');if(!btn)return;switch(btn.dataset.action){case 'guide':openGuide();break;case 'lab':openLab();break;case 'lab-check-v10':openRoom('Inspección de integridad','Herramientas PMV');break;case 'lab-return-v10':openLab();break;case 'back-floor':showPage('inicio');break;case 'visit-step':openGuideStepV10();break;case 'next-step':guideStep=Math.min(guide.length-1,guideStep+1);document.getElementById('workspaceBody').innerHTML=renderRoom('Recorrido guiado');break;case 'prev-step':guideStep=Math.max(0,guideStep-1);document.getElementById('workspaceBody').innerHTML=renderRoom('Recorrido guiado');break;case 'export':exportJSON();break;case 'reset':if(confirm('¿Restaurar todos los datos ficticios y descartar los cambios locales?')){db=seed();audit('Restauración del escenario ficticio');persist('Datos ficticios restaurados.');document.getElementById('workspaceBody').innerHTML=renderRoom('Laboratorio')}break}});
+document.addEventListener('submit',e=>{const form=e.target.closest('form[data-form]');if(!form)return;e.preventDefault();if(currentRoom&&!can(currentRoom)&&!['Laboratorio','Recorrido guiado','Inspección de integridad'].includes(currentRoom)){toast('Acceso denegado al cambiar de perfil');return}if(form.dataset.form==='agreement-v9'){saveAgreementV9(form);return}if(form.dataset.form==='followup-v8'){saveFinanceV8(form,'followup');return}if(form.dataset.form==='payment-v8'){saveFinanceV8(form,'payment');return}if(form.dataset.form==='evaluation-v7'){saveClinicalV7(form,'evaluation');return}if(form.dataset.form==='report-v7'){saveClinicalV7(form,'report');return}if(form.dataset.form==='patient-v5'){patientSaveV5(form);return}if(form.dataset.form==='appointment-v6'){saveAppointmentV6(form);return}if(form.dataset.form==='session-v6'){saveSessionV6(form);return}submitForm(form)});
+document.addEventListener('input',e=>{if(e.target.id==='auditSearchV9'){auditFilterV9=e.target.value;const filtered=db.log.filter(l=>[l.action,l.role,l.at,l.date,l.detail].join(' ').toLocaleLowerCase('es').includes(auditFilterV9.toLocaleLowerCase('es')));document.getElementById('auditRowsV9').innerHTML=auditRowsV9(filtered);return;}if(e.target.id==='patientSearchV5'){patientSearch=e.target.value;const rows=db.patients.filter(p=>(role!=='medico'||p.assigned==='Médico')&&[p.name,p.id,p.reason].join(' ').toLocaleLowerCase('es').includes(patientSearch.toLocaleLowerCase('es'))).map(p=>`<tr><td><strong>${safe(p.name)}</strong><br><small>${safe(p.id)}</small></td><td>${safe(p.age)}</td><td>${safe(p.reason||'')}</td><td>${safe(p.assigned||'')}</td><td><span class="pill">${safe(p.status)}</span></td><td><button type="button" class="small-btn" data-patient-view="${safe(p.id)}">Ver</button></td></tr>`).join('');document.getElementById('patientRowsV5').innerHTML=rows||'<tr><td colspan="6">Sin resultados</td></tr>'}});
+document.addEventListener('change',e=>{if(e.target.matches('[data-accept-status-v39]')){const id=e.target.dataset.acceptStatusV39;acceptanceV39[id]={...(acceptanceV39[id]||{}),status:e.target.value};acceptanceSaveV39();return}if(e.target.matches('[data-accept-note-v39]')){const id=e.target.dataset.acceptNoteV39;acceptanceV39[id]={...(acceptanceV39[id]||{}),note:e.target.value};acceptanceSaveV39();return}if(e.target.matches('[data-ui-review-v23]')){uiReviewV23[e.target.dataset.uiReviewV23]=e.target.value;const host=e.target.closest('.work-card');const summary=host?.querySelector('p:nth-of-type(2)');if(summary){const v=Object.values(uiReviewV23);summary.textContent='Superadas: '+v.filter(x=>x==='Superada').length+' · Fallidas: '+v.filter(x=>x==='Fallida').length+' · Pendientes: '+(uiScenariosV23.length-v.filter(x=>x!=='Pendiente').length)}return}if(e.target.id==='guidePatientV10'){guidePatientId=e.target.value;document.getElementById('workspaceBody').innerHTML=renderRoom('Recorrido guiado');return}if(e.target.id==='clinicalPatientV6'){clinicalSelectedId=e.target.value;document.getElementById('workspaceBody').innerHTML=renderRoom('Expedientes');return}if(e.target.id==='legacyImportFileV15'){legacyPreviewFileV15(e.target.files?.[0]);return}if(e.target.id==='importFile')importJSON(e.target.files?.[0])});
+document.getElementById('demoRole').addEventListener('change',e=>{role=e.target.value;patientViewingId=null;patientEditingId=null;appointmentEditingId=null;assessmentEditingId=null;reportEditingId=null;followupEditV8=null;paymentEditV8=null;agreementEditingV9=null;toast('Perfil simulado: '+e.target.options[e.target.selectedIndex].text);if(document.getElementById('workspace').classList.contains('active')&&!(currentRoom==='Inspección de integridad'&&['psicologa','administrativo'].includes(role))&&!can(currentRoom))showPage('inicio');else if(document.getElementById('workspace').classList.contains('active'))document.getElementById('workspaceBody').innerHTML=renderRoom(currentRoom)});
 document.getElementById('menuToggle').addEventListener('click',()=>{const nav=document.getElementById('nav');nav.classList.toggle('open');document.getElementById('menuToggle').setAttribute('aria-expanded',String(nav.classList.contains('open')))});
-document.getElementById('closeModal').addEventListener('click',closeRoom);document.getElementById('acceptModal').addEventListener('click',closeRoom);overlay.addEventListener('click',e=>{if(e.target===overlay)closeRoom()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&overlay.classList.contains('open'))closeRoom();if(e.key==='Tab'&&overlay.classList.contains('open')){const els=[...overlay.querySelectorAll('button:not([disabled])')];if(e.shiftKey&&document.activeElement===els[0]){e.preventDefault();els.at(-1).focus()}else if(!e.shiftKey&&document.activeElement===els.at(-1)){e.preventDefault();els[0].focus()}}});
-const hash=decodeURIComponent(location.hash.slice(1));if(hash&&document.getElementById(hash))showPage(hash);
+document.getElementById('closeModal').addEventListener('click',closeRoom);document.getElementById('acceptModal').addEventListener('click',closeRoom);overlay.addEventListener('click',e=>{if(e.target===overlay)closeRoom()});document.addEventListener('keydown',e=>{if(e.key==='Escape'&&overlay.classList.contains('open'))closeRoom()});
+persistenceFinishV17();
+const hash=decodeURIComponent(location.hash.slice(1));if(hash&&document.getElementById(hash)&&hash!=='workspace')showPage(hash);try{if(sessionStorage.getItem('serenamente_persist_result_v17')&&sessionStorage.getItem('serenamente_persist_result_v17')!==sessionStorage.getItem('serenamente_persist_result_seen_v17')){sessionStorage.setItem('serenamente_persist_result_seen_v17',sessionStorage.getItem('serenamente_persist_result_v17'));openLab()}}catch(error){console.info('Prueba de recarga no disponible en este origen',error.message)}
 </script>
 </body>
 </html>
